@@ -14,7 +14,7 @@
   <script type="text/javascript" src="javascript/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   
- <link rel="stylesheet" href="css/animate.css">
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
   
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -23,11 +23,11 @@
    
 </head>
 <body>
-<section>
+<section id="section">
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 logo">
                     <img src="images/Logo%20Grid.svg" alt="">
                 </div>
                 <div class="col-md-9">
@@ -43,16 +43,17 @@
                            <img src="images/ElegantIcons%20social%20twitter.svg" class="hide" alt="">
                             <img src="images/entypo%20linkedin.svg" class="hide" alt="">
                             <input type="text">
-                            <img src="images/ElegantIcons%20icon%20lock.svg" alt="">
+                            <i class="material-icons search">search</i>
+                            <i class="material-icons lock">lock</i>
                             <p class="int">Internet Banking</p>
                    </div>
                     <ul>
                         <li id="acct">Account<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
-                        <li class="next_one">Loans & Mortgages<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
-                        <li class="next_one">Savings & Investments<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
-                        <li class="next_one">About Us<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
-                        <li class="next_one">Media<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
-                        <li class="next_one">Investor Relations<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
+                        <li class="next_one" id="loan">Loans & Mortgages<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
+                        <li class="next_one" id="saving">Savings & Investments<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
+                        <li class="next_one" id="about">About Us<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
+                        <li class="next_one" id="media">Media<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
+                        <li class="next_one" id="investor">Investor Relations<img src="images/ElegantIcons%20arrow%20carrot%20down.svg" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -63,7 +64,7 @@
             <div class="row">
                 <div class="first col-md-3">
                    <p>Account</p>
-                    <img src="images/" alt="">
+                    <img src="images/weight2.jpg" alt="">
                     
                 </div>
                 <div class="col-md-3">
@@ -87,7 +88,7 @@
             <div class="row">
                 <div class="first col-md-3">
                    <p>Loan & Mortgage</p>
-                    <img src="images/" alt="">
+                    <img src="images/weight2.jpg" alt="">
                     
                 </div>
                 <div class="col-md-3">
@@ -124,7 +125,7 @@
             <div class="row">
                 <div class="first col-md-3">
                    <p>Savings & Investments</p>
-                    <img src="images/" alt="">
+                    <img src="images/weight2.jpg" alt="">
                     
                 </div>
                 <div class="col-md-3">
@@ -143,7 +144,79 @@
             </div>
         </div>
     </div>
-    <div class="container caption">
+      <div class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="first col-md-3">
+                   <p>About Us</p>
+                    <img src="images/weight2.jpg" alt="">
+                    
+                </div>
+                <div class="col-md-3">
+                    <p>Our Firm</p>
+                    <li>Bank Brief</li>
+                    <li>The Merger</li>
+                    <li>Core Values</li>
+                    
+                    
+                </div>
+                <div class="col-md-3">
+                    <p>The Team</p>
+                    <li>Board of Directors</li>
+                    <li>Management Team</li>
+                    
+                    
+                </div>
+                <div class="col-md-3">
+                    <p>Others</p>
+                    <li>Code of Governance</li>
+                    <li>Careers</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="media">
+        <div class="container">
+            <div class="row">
+                <div class="first col-md-3">
+                   <p>Media</p>
+                    <img src="images/weight2.jpg" alt="">
+                    
+                </div>
+                <div class="col-md-3">
+                    <p>Blog</p>
+                    <li>News</li>
+                    <li>Videos</li>
+                    
+                    
+                </div>
+                <div class="col-md-3">
+                    <p>Resources</p>
+                    <li>Gallery</li>
+                    <li>Documents</li>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="investor">
+        <div class="container">
+            <div class="row">
+                <div class="first col-md-3">
+                   <p>Investor's Relations</p>
+                    <img src="images/weight2.jpg" alt="">
+                    
+                </div>
+                <div class="col-md-3">
+                    <p>Others</p>
+                    <li>Investors updates & records</li>
+                    <li>Financials</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container caption animated bounceInLeft delay-2s">
         <h1>We ensure you <br>remain happy</h1>
         <p>We provide you with the opportunity to pay for your rent <br>hassle free while you pay back at your pace</p>
         <button>Get a Rent Loan <span></span><span></span><span></span><span></span></button>
@@ -161,13 +234,13 @@
         </div>
     </div>
 </section>
-<div class="fixed-bottom right">
-    <p>We are Online - Chat with us</p>
+<div class="right">
+    <p><i class="material-icons">chat</i><span>We are Online</span> - Chat with us</p>
 </div>
 
-<div class="why container wow bounceInUp">
+<div class="why container">
     <div class="mx-auto">
-        <h1>Why FirstTrust</h1>
+        <h1 class="wow tada">Why FirstTrust</h1>
         <p>We have made getting loans and mortgages, and <br>making savings easier for you</p>
         <p>I want to <input type="text" placeholder="Build House"> <button>Search <span></span><span></span><span></span><span></span</button></p>
     </div>
@@ -210,7 +283,7 @@ cancel
 <div class="getting-started container-fluid">
        <div class="mx-auto">
         <h5>HOW TO GET STARTED</h5>
-        <h1>Everything in 3 Simple Steps</h1>
+        <h1 class="wow tada">Everything in 3 Simple Steps</h1>
         <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#home">Loans & Mortgage</a>
@@ -269,7 +342,7 @@ cancel
     <div class="everything container">
        <div class="mx-auto">
         <h5>EVERYTHING YOU NEED</h5>
-        <h1>Products that meet your needs</h1>
+        <h1 class="wow tada">Products that meet your needs</h1>
         <p>We have offers that are tailored to your desires financially<br> from loans to savings to mortgages to investments</p>
         
        </div>
@@ -311,7 +384,7 @@ cancel
         
     </div>
     <div class="who-we-are container-fluid">
-        <div class="text">
+        <div class="text  wow bounceInRight">
             <h1>We are FirstTrust</h1>
             <p>At FirstTrust, our vision is to be the preferred financial service provider, offering innovative mortgage and real estate finance solutions. To do this, our mission statement to meet the financial and mortgage needs of our customers while delivering superior values to our stakeholders</p>
             <button>Learn more About Us <span></span><span></span><span></span><span></span</button>
