@@ -20,78 +20,82 @@
 //    $('.nav-tabs li:eq(3) a').tab('show')
     
     //Header Dropdown
-    $("#acct").click(function(){
+     $(".drop").click(function(){
+         $(".drop").slideUp();
+         $("header").addClass("back_down");
+     });
+    $("#acct").hover(function(){
         $(".savings").slideUp();
         $(".media").slideUp();
         $(".investor").slideUp();
         $(".about-us").slideUp();
         $(".Loan").slideUp();
-        $(".account").delay(300).slideToggle();
-        $("header").css({"background-color": "#f7f7f7", "color" : "#54575C"});
+        $(".account").delay(300).slideDown();
+        $("header").addClass("hovered");
         $(".hide").css({"display": "inline-block"});
         $(".show").css({"display": "none"});
     });
      
      
      //Next dropdown
-    $("#loan").click(function(){
+    $("#loan").hover(function(){
         $(".account").slideUp();
         $(".savings").slideUp();
         $(".media").slideUp();
         $(".investor").slideUp();
         $(".about-us").slideUp();
-        $(".Loan").delay(500).slideToggle();
-        $("header").css({"background-color": "#f7f7f7", "color" : "#54575C"});
+        $(".Loan").delay(500).slideDown();
+       $("header").addClass("hovered");
         $(".hide").css({"display": "inline-block"});
         $(".show").css({"display": "none"});
     });
      
      
      //Next dropdown
-       $("#saving").click(function(){
+       $("#saving").hover(function(){
         $(".account").slideUp();
         $(".Loan").slideUp();
         $(".media").slideUp();
         $(".investor").slideUp();
         $(".about-us").slideUp();
-        $(".savings").delay(500).slideToggle();
-        $("header").css({"background-color": "#f7f7f7", "color" : "#54575C"});
+        $(".savings").delay(500).slideDown();
+        $("header").addClass("hovered");
         $(".hide").css({"display": "inline-block"});
         $(".show").css({"display": "none"});
     });
      
-    $("#about").click(function(){
+    $("#about").hover(function(){
         $(".account").slideUp();
         $(".Loan").slideUp();
         $(".savings").slideUp();
         $(".media").slideUp();
         $(".investor").slideUp();
         $(".about-us").delay(500).slideToggle()
-        $("header").css({"background-color": "#f7f7f7", "color" : "#54575C"});
+        $("header").addClass("hovered");
         $(".hide").css({"display": "inline-block"});
         $(".show").css({"display": "none"});
     });
      
-     $("#media").click(function(){
+     $("#media").hover(function(){
         $(".account").slideUp();
         $(".Loan").slideUp();
         $(".savings").slideUp();
-        $(".media").delay(500).slideToggle();
+        $(".media").delay(500).slideDown();
         $(".investor").slideUp();
         $(".about-us").slideUp();
-        $("header").css({"background-color": "#f7f7f7", "color" : "#54575C"});
+        $("header").addClass("hovered");
         $(".hide").css({"display": "inline-block"});
          $(".show").css({"display": "none"});
     });
      
-    $("#investor").click(function(){
+    $("#investor").hover(function(){
         $(".account").slideUp();
         $(".Loan").slideUp();
         $(".savings").slideUp();
         $(".media").slideUp();
-        $(".investor").delay(500).slideToggle();
+        $(".investor").delay(500).slideDown();
         $(".about-us").slideUp();
-        $("header").css({"background-color": "#f7f7f7", "color" : "#54575C"});
+        $("header").addClass("hovered");
         $(".hide").css({"display": "inline-block"});
         $(".show").css({"display": "none"});
     }); 
@@ -120,7 +124,7 @@
            if (num == 3) num = 0;
 		   else num++;
            
-            slider.style.backgroundImage = "linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.1)),url("+pictures[num]+")"  ;
+            slider.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("+pictures[num]+")"  ;
         }
             
         setInterval('main()', 3000);
