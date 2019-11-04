@@ -2,23 +2,28 @@
   $(".nav-tabs a").click(function(){
     $(this).tab('show');
   });
-//      // Select all tabs
-//    $('.nav-tabs a').click(function(){
-//      $(this).tab('show');
-//    })
-//
-//    // Select tab by name
-//    $('.nav-tabs a[href="#home"]').tab('show')
-//
-//    // Select first tab
-//    $('.nav-tabs a:first').tab('show')
-//
-//    // Select last tab
-//    $('.nav-tabs a:last').tab('show')
-//
-//    // Select fourth tab (zero-based)
-//    $('.nav-tabs li:eq(3) a').tab('show')
-    
+
+      $(window).scroll(function(){
+            if ($(window).scrollTop() >= 120) {
+                $('.header').addClass('sticky');
+                
+            }
+            else {
+                $('.header').removeClass('sticky');
+                
+            }
+        });
+     
+      $(window).scroll(function(){
+            if ($(window).scrollTop() >= 120) {
+                $('header').addClass('fixed-header');
+                
+            }
+            else {
+                $('header').removeClass('fixed-header');
+                
+            }
+        });
     //Header Dropdown
      $(".drop").click(function(){
          $(".drop").slideUp();
@@ -100,7 +105,8 @@
         $(".show").css({"display": "none"});
     }); 
      
-     
+  
+  
     
     $(".dropdown").hover(            
         function() {

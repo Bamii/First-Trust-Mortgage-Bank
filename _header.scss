@@ -6,8 +6,13 @@
         color:$theme-grey;
         padding: 20px 15px 0 15px;
         transition: 0.2s ease-in;
+        z-index: 9999;
+        .logo{
+            padding-top: 13px;
+        }
         .col-md-3,.col-md-9{
-            padding: 0;
+            padding-left: 0;
+            padding-right: 0;
             
         }
        
@@ -70,7 +75,7 @@
                 }
             }
             .next_one{
-                padding-left: 30px;
+                padding-left: 50px;
             }
         }
         
@@ -98,6 +103,12 @@
             color:$theme-blue;
             p{
                 font-weight:700;
+            }
+            li{
+                transition: 0.2s ease-in-out;
+            }
+            li:hover{
+                font-weight: 600;
             }
         }
     }
