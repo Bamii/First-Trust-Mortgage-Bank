@@ -116,6 +116,12 @@
   line-height: 22px;
   color: #000;
   cursor: pointer; }
+  /* line 129, C:/Users/GRACE/Documents/projects/Firstbank/_header.scss */
+  .Loan li a, .savings li a, .about-us li a, .media li a, .investor li a {
+    color: #000; }
+  /* line 132, C:/Users/GRACE/Documents/projects/Firstbank/_header.scss */
+  .Loan li a:hover, .savings li a:hover, .about-us li a:hover, .media li a:hover, .investor li a:hover {
+    text-decoration: none; }
 
 /* line 3, C:/Users/GRACE/Documents/projects/Firstbank/_footer.scss */
 .main-footer {
@@ -208,12 +214,24 @@
   /* line 22, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .modal h4 {
     font-size: 17px;
-    font-weight: 700; }
-  /* line 26, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    font-weight: 700;
+    float: none !important; }
+  /* line 27, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .modal p {
     font-size: 14px; }
+  /* line 31, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  .modal .modal-content .modal-header {
+    text-align: center; }
+    /* line 33, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    .modal .modal-content .modal-header .picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      margin: auto;
+      background-position: center;
+      background-size: cover; }
 
-/* line 31, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 45, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .fixed-header {
   background-color: #f7f7f7;
   color: #54575C;
@@ -222,23 +240,23 @@
   left: 0;
   width: 100%;
   z-index: 9999; }
-  /* line 39, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 53, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .fixed-header .top {
     border-bottom: 1px solid rgba(84, 87, 92, 0.5);
     padding-bottom: 10px; }
-    /* line 42, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 56, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .fixed-header .top .lock {
       background-color: #385E70;
       border-radius: 3px;
       font-size: 10px;
       padding: 3px;
       color: #f7f7f7; }
-    /* line 49, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 63, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .fixed-header .top img {
       margin-left: 10px;
       width: 10px;
       height: 10px; }
-    /* line 55, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 69, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .fixed-header .top input {
       width: 65%;
       border-top: none;
@@ -246,31 +264,31 @@
       border-left: none;
       border-right: 1px solid #54575C;
       background-color: transparent; }
-    /* line 63, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 77, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .fixed-header .top .int {
       float: right; }
-  /* line 67, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 81, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .fixed-header ul {
     padding-left: 0;
     margin-top: 15px; }
-    /* line 71, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 85, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .fixed-header ul li {
       list-style: none;
       float: left;
       font-size: 12px;
       font-weight: 500;
       cursor: pointer; }
-      /* line 77, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 91, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .fixed-header ul li a {
         color: #54575C; }
-      /* line 80, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 94, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .fixed-header ul li img {
         margin-left: 10px; }
-    /* line 84, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 98, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .fixed-header ul .next_one {
       padding-left: 50px; }
 
-/* line 90, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 104, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 body, html {
   padding: 0;
   margin: 0;
@@ -278,7 +296,7 @@ body, html {
   width: 100%;
   font-family: 'Poppins', sans-serif; }
 
-/* line 98, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 112, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 section, .loanMortages, .rentLoan {
   height: 100%;
   position: relative;
@@ -286,25 +304,25 @@ section, .loanMortages, .rentLoan {
   width: 100%;
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Family-II.png);
   background-position: right; }
-  /* line 105, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 119, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   section header, .loanMortages header, .rentLoan header {
     background-color: transparent;
     height: 120px;
     color: #f0f0f0;
     padding: 20px 15px 0 15px;
     transition: 0.2s ease-in; }
-    /* line 111, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 125, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section header .logo, .loanMortages header .logo, .rentLoan header .logo {
       padding-top: 13px; }
-    /* line 114, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 128, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section header .col-md-3, .loanMortages header .col-md-3, .rentLoan header .col-md-3, section header .col-md-9, .loanMortages header .col-md-9, .rentLoan header .col-md-9 {
       padding-left: 0;
       padding-right: 0; }
-    /* line 120, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 134, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section header .top, .loanMortages header .top, .rentLoan header .top {
       border-bottom: 1px solid #f7f7f7;
       padding-bottom: 10px; }
-      /* line 123, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 137, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header .top p, .loanMortages header .top p, .rentLoan header .top p {
         float: left;
         display: inline-block;
@@ -312,26 +330,26 @@ section, .loanMortages, .rentLoan {
         font-weight: 500;
         margin-top: 6px;
         padding: 0; }
-      /* line 131, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 145, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header .top .hide, .loanMortages header .top .hide, .rentLoan header .top .hide {
         display: none; }
-      /* line 134, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 148, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header .top .search, .loanMortages header .top .search, .rentLoan header .top .search {
         margin-left: -25px;
         margin-right: 10px;
         font-size: 16px; }
-      /* line 139, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 153, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header .top .lock, .loanMortages header .top .lock, .rentLoan header .top .lock {
         background-color: #385E70;
         border-radius: 100%;
         font-size: 10px;
         padding: 3px; }
-      /* line 145, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 159, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header .top img, .loanMortages header .top img, .rentLoan header .top img {
         margin-left: 15px;
         width: 10px;
         height: 10px; }
-      /* line 151, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 165, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header .top input, .loanMortages header .top input, .rentLoan header .top input {
         width: 65%;
         border-top: none;
@@ -339,94 +357,94 @@ section, .loanMortages, .rentLoan {
         border-left: none;
         border-right: 1px solid #f7f7f7;
         background-color: transparent; }
-      /* line 159, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 173, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header .top .int, .loanMortages header .top .int, .rentLoan header .top .int {
         float: right; }
-    /* line 163, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 177, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section header ul, .loanMortages header ul, .rentLoan header ul {
       padding-left: 0;
       margin-top: 15px; }
-      /* line 167, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 181, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header ul li, .loanMortages header ul li, .rentLoan header ul li {
         list-style: none;
         float: left;
         font-size: 12px;
         font-weight: 500;
         cursor: pointer; }
-        /* line 173, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 187, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         section header ul li a, .loanMortages header ul li a, .rentLoan header ul li a {
           color: #f7f7f7; }
-        /* line 176, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 190, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         section header ul li img, .loanMortages header ul li img, .rentLoan header ul li img {
           margin-left: 10px; }
-      /* line 180, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 194, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header ul .next_one, .loanMortages header ul .next_one, .rentLoan header ul .next_one {
         padding-left: 50px; }
-  /* line 186, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 200, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   section header:hover, .loanMortages header:hover, .rentLoan header:hover {
     background-color: #f7f7f7;
     color: #54575C; }
-    /* line 189, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 203, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section header:hover .top, .loanMortages header:hover .top, .rentLoan header:hover .top {
       border-bottom: 1px solid rgba(84, 87, 92, 0.2); }
-      /* line 191, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 205, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header:hover .top .search, .loanMortages header:hover .top .search, .rentLoan header:hover .top .search {
         color: #385E70; }
-      /* line 194, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 208, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header:hover .top .lock, .loanMortages header:hover .top .lock, .rentLoan header:hover .top .lock {
         color: #fff; }
-      /* line 197, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 211, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header:hover .top input, .loanMortages header:hover .top input, .rentLoan header:hover .top input {
         border-right: 1px solid #54575C; }
-      /* line 200, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 214, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header:hover .top .show, .loanMortages header:hover .top .show, .rentLoan header:hover .top .show {
         display: none; }
-      /* line 203, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 217, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section header:hover .top .hide, .loanMortages header:hover .top .hide, .rentLoan header:hover .top .hide {
         display: inline-block; }
-    /* line 209, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 223, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section header:hover ul li a, .loanMortages header:hover ul li a, .rentLoan header:hover ul li a {
       color: #54575C; }
-  /* line 215, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 229, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   section .hovered, .loanMortages .hovered, .rentLoan .hovered {
     background-color: #f7f7f7;
     color: #54575C; }
-    /* line 218, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 232, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .hovered .top, .loanMortages .hovered .top, .rentLoan .hovered .top {
       border-bottom: 1px solid rgba(84, 87, 92, 0.2); }
-      /* line 220, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 234, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .hovered .top .search, .loanMortages .hovered .top .search, .rentLoan .hovered .top .search {
         color: #385E70; }
-      /* line 223, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 237, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .hovered .top .lock, .loanMortages .hovered .top .lock, .rentLoan .hovered .top .lock {
         color: #fff; }
-      /* line 226, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 240, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .hovered .top input, .loanMortages .hovered .top input, .rentLoan .hovered .top input {
         border-right: 1px solid #54575C; }
-      /* line 229, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 243, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .hovered .top .show, .loanMortages .hovered .top .show, .rentLoan .hovered .top .show {
         display: none; }
-      /* line 232, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 246, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .hovered .top .hide, .loanMortages .hovered .top .hide, .rentLoan .hovered .top .hide {
         display: inline-block; }
-    /* line 238, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 252, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .hovered ul li a, .loanMortages .hovered ul li a, .rentLoan .hovered ul li a {
       color: #54575C; }
-  /* line 245, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 259, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   section .back_down, .loanMortages .back_down, .rentLoan .back_down {
     background-color: transparent;
     height: 120px;
     color: #f0f0f0;
     padding: 20px 15px 0 15px;
     transition: 0.2s ease-in; }
-    /* line 251, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 265, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .back_down .col-md-3, .loanMortages .back_down .col-md-3, .rentLoan .back_down .col-md-3, section .back_down .col-md-9, .loanMortages .back_down .col-md-9, .rentLoan .back_down .col-md-9 {
       padding: 0; }
-    /* line 256, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 270, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .back_down .top, .loanMortages .back_down .top, .rentLoan .back_down .top {
       border-bottom: 1px solid #f7f7f7;
       padding-bottom: 10px; }
-      /* line 259, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 273, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down .top p, .loanMortages .back_down .top p, .rentLoan .back_down .top p {
         float: left;
         display: inline-block;
@@ -434,26 +452,26 @@ section, .loanMortages, .rentLoan {
         font-weight: 500;
         margin-top: 6px;
         padding: 0; }
-      /* line 267, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 281, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down .top .hide, .loanMortages .back_down .top .hide, .rentLoan .back_down .top .hide {
         display: none; }
-      /* line 270, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 284, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down .top .search, .loanMortages .back_down .top .search, .rentLoan .back_down .top .search {
         margin-left: -25px;
         margin-right: 10px;
         font-size: 16px; }
-      /* line 275, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 289, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down .top .lock, .loanMortages .back_down .top .lock, .rentLoan .back_down .top .lock {
         background-color: #385E70;
         border-radius: 100%;
         font-size: 10px;
         padding: 3px; }
-      /* line 281, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 295, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down .top img, .loanMortages .back_down .top img, .rentLoan .back_down .top img {
         margin-left: 15px;
         width: 10px;
         height: 10px; }
-      /* line 287, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 301, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down .top input, .loanMortages .back_down .top input, .rentLoan .back_down .top input {
         width: 65%;
         border-top: none;
@@ -461,42 +479,42 @@ section, .loanMortages, .rentLoan {
         border-left: none;
         border-right: 1px solid #f7f7f7;
         background-color: transparent; }
-      /* line 295, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 309, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down .top .int, .loanMortages .back_down .top .int, .rentLoan .back_down .top .int {
         float: right; }
-    /* line 299, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 313, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .back_down ul, .loanMortages .back_down ul, .rentLoan .back_down ul {
       padding-left: 0;
       margin-top: 15px; }
-      /* line 303, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 317, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down ul li, .loanMortages .back_down ul li, .rentLoan .back_down ul li {
         list-style: none;
         float: left;
         font-size: 12px;
         font-weight: 500;
         cursor: pointer; }
-        /* line 309, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 323, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         section .back_down ul li a, .loanMortages .back_down ul li a, .rentLoan .back_down ul li a {
           color: #f7f7f7; }
-        /* line 312, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 326, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         section .back_down ul li img, .loanMortages .back_down ul li img, .rentLoan .back_down ul li img {
           margin-left: 10px; }
-      /* line 316, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 330, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .back_down ul .next_one, .loanMortages .back_down ul .next_one, .rentLoan .back_down ul .next_one {
         padding-left: 50px; }
-  /* line 321, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 335, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   section .caption, .loanMortages .caption, .rentLoan .caption {
     color: #f7f7f7;
     padding-top: 100px; }
-    /* line 324, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 338, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption h1, .loanMortages .caption h1, .rentLoan .caption h1 {
       font-size: 50px;
       font-weight: 500; }
-    /* line 328, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 342, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption p, .loanMortages .caption p, .rentLoan .caption p {
       font-size: 15px;
       font-weight: 100; }
-    /* line 332, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 346, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption button, .loanMortages .caption button, .rentLoan .caption button {
       width: 200px;
       height: 3em;
@@ -508,7 +526,7 @@ section, .loanMortages, .rentLoan {
       overflow: hidden;
       z-index: 1;
       transition: 0.5s; }
-    /* line 344, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 358, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption button span, .loanMortages .caption button span, .rentLoan .caption button span {
       position: absolute;
       width: 25%;
@@ -520,25 +538,25 @@ section, .loanMortages, .rentLoan {
       transition: 0.5s;
       transition-delay: calc((var(--n) - 1) * 0.1s);
       z-index: -1; }
-    /* line 357, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 371, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption button:hover, .loanMortages .caption button:hover, .rentLoan .caption button:hover {
       color: #385E70; }
-    /* line 361, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 375, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption button:hover span, .loanMortages .caption button:hover span, .rentLoan .caption button:hover span {
       transform: translateY(0) scale(2); }
-    /* line 364, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 378, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption button span:nth-child(1), .loanMortages .caption button span:nth-child(1), .rentLoan .caption button span:nth-child(1) {
       --n: 1; }
-    /* line 368, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 382, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption button span:nth-child(2), .loanMortages .caption button span:nth-child(2), .rentLoan .caption button span:nth-child(2) {
       --n: 2; }
-    /* line 372, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 386, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption button span:nth-child(3), .loanMortages .caption button span:nth-child(3), .rentLoan .caption button span:nth-child(3) {
       --n: 3; }
-    /* line 376, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 390, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .caption button span:nth-child(4), .loanMortages .caption button span:nth-child(4), .rentLoan .caption button span:nth-child(4) {
       --n: 4; }
-  /* line 381, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 395, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   section .bot, .loanMortages .bot, .rentLoan .bot {
     width: 100%;
     position: absolute;
@@ -546,11 +564,11 @@ section, .loanMortages, .rentLoan {
     height: 90px;
     padding-top: 10px;
     background: linear-gradient(rgba(56, 94, 112, 0.9), rgba(56, 94, 112, 0.9)); }
-    /* line 389, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 403, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     section .bot .container ul, .loanMortages .bot .container ul, .rentLoan .bot .container ul {
       padding: 0;
       font-weight: 300; }
-      /* line 392, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 406, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .bot .container ul li, .loanMortages .bot .container ul li, .rentLoan .bot .container ul li {
         list-style: none;
         color: #f7f7f7;
@@ -560,7 +578,7 @@ section, .loanMortages, .rentLoan {
         font-size: 12px;
         margin-right: 20px;
         cursor: pointer; }
-        /* line 401, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 415, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         section .bot .container ul li span, .loanMortages .bot .container ul li span, .rentLoan .bot .container ul li span {
           font-size: 12px;
           text-align: center;
@@ -574,18 +592,18 @@ section, .loanMortages, .rentLoan {
     opacity: 0; }
   100% {
     opacity: 1; } }
-        /* line 417, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 431, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         section .bot .container ul li img, .loanMortages .bot .container ul li img, .rentLoan .bot .container ul li img {
           margin-right: 15px;
           margin-left: 15px; }
-      /* line 425, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 439, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .bot .container ul .shit, .loanMortages .bot .container ul .shit, .rentLoan .bot .container ul .shit {
         margin-left: 25px; }
-      /* line 429, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 443, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       section .bot .container ul li:hover span, .loanMortages .bot .container ul li:hover span, .rentLoan .bot .container ul li:hover span {
         display: block; }
 
-/* line 437, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 451, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .right {
   background-color: #385E70;
   color: #f7f7f7;
@@ -596,37 +614,37 @@ section, .loanMortages, .rentLoan {
   z-index: 9999;
   float: right !important;
   width: 17% !important; }
-  /* line 447, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 461, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .right p {
     font-size: 13px;
     padding: 10px 0;
     margin-bottom: 0; }
-    /* line 451, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 465, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .right p i {
       font-size: 15px;
       display: inline-block;
       margin-right: 10px; }
-  /* line 458, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 472, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .right span {
     font-weight: 700; }
 
-/* line 464, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 478, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .why .mx-auto {
   width: 70%;
   margin-top: 70px;
   text-align: center;
   margin-right: auto;
   margin-left: auto; }
-  /* line 470, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 484, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .why .mx-auto h1 {
     font-weight: 700;
     color: #54575C;
     font-size: 30px; }
-  /* line 475, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 489, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .why .mx-auto p {
     font-size: 14px;
     color: #54575C; }
-  /* line 479, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 493, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .why .mx-auto input {
     height: 40px;
     background-color: #f7f7f7;
@@ -634,15 +652,15 @@ section, .loanMortages, .rentLoan {
     width: 400px;
     text-align: center;
     margin-left: 15px; }
-  /* line 487, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 501, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .why .mx-auto ::placeholder {
     text-align: center;
     color: #34657F;
     font-weight: 500; }
-  /* line 492, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 506, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .why .mx-auto p {
     margin-top: 30px; }
-    /* line 494, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 508, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .mx-auto p button {
       width: 100px;
       height: 32px;
@@ -655,7 +673,7 @@ section, .loanMortages, .rentLoan {
       overflow: hidden;
       z-index: 1;
       transition: 0.5s; }
-    /* line 507, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 521, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .mx-auto p button span {
       position: absolute;
       width: 25%;
@@ -667,89 +685,89 @@ section, .loanMortages, .rentLoan {
       transition: 0.5s;
       transition-delay: calc((var(--n) - 1) * 0.1s);
       z-index: -1; }
-    /* line 520, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 534, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .mx-auto p button:hover {
       color: #385E70;
       box-shadow: 0px 3px 10px rgba(56, 94, 112, 0.7); }
-    /* line 525, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 539, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .mx-auto p button:hover span {
       transform: translateY(0) scale(2); }
-    /* line 528, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 542, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .mx-auto p button span:nth-child(1) {
       --n: 1; }
-    /* line 532, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 546, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .mx-auto p button span:nth-child(2) {
       --n: 2; }
-    /* line 536, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 550, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .mx-auto p button span:nth-child(3) {
       --n: 3; }
-    /* line 540, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 554, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .mx-auto p button span:nth-child(4) {
       --n: 4; }
 
-/* line 545, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 559, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .why .row {
   margin-top: 70px;
   background-image: url(images/Accounting.svg); }
-  /* line 554, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 568, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .why .row .cancel {
     width: 100%; }
-    /* line 556, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 570, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .row .cancel .product {
       color: #54575C;
       font-weight: 600;
       font-size: 15px;
       float: left;
       display: inline-block; }
-    /* line 563, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 577, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .row .cancel .cancle {
       float: right;
       font-size: 11px;
       margin-right: 20px;
       cursor: pointer; }
-  /* line 570, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 584, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .why .row .col-md-4 {
     padding: 0; }
-    /* line 572, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 586, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .why .row .col-md-4 .cont {
       background-color: #f7f7f7;
       width: 95%;
       float: left;
       box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
       padding: 10px 10px 10px 20px; }
-      /* line 578, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 592, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .why .row .col-md-4 .cont i {
         font-size: 13px;
         color: #fff;
         background-color: #385E70;
         border-radius: 100%; }
-      /* line 585, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 599, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .why .row .col-md-4 .cont .first {
         color: #54575C;
         font-size: 10px;
         font-weight: 700;
         margin-bottom: 5px; }
-      /* line 591, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 605, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .why .row .col-md-4 .cont h5 {
         color: #000;
         font-weight: 600;
         font-size: 16px;
         margin: 10px 0; }
-      /* line 597, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 611, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .why .row .col-md-4 .cont .next {
         font-size: 12px;
         color: #54575C; }
-  /* line 607, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 621, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .why .row p a {
     color: #385E70;
     text-decoration: underline; }
 
-/* line 615, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 629, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .getting-started, .everything {
   background-color: #f7f7f7;
   height: 500px;
   width: 100%; }
-  /* line 619, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 633, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .getting-started .mx-auto, .everything .mx-auto {
     width: 70%;
     margin-top: 20px;
@@ -757,75 +775,75 @@ section, .loanMortages, .rentLoan {
     padding-top: 50px;
     margin-right: auto;
     margin-left: auto; }
-    /* line 626, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 640, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .getting-started .mx-auto h1, .everything .mx-auto h1 {
       font-weight: 700;
       color: #000;
       font-size: 30px; }
-    /* line 631, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 645, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .getting-started .mx-auto h5, .everything .mx-auto h5 {
       font-size: 11px;
       font-weight: 700;
       color: #54575C; }
-    /* line 637, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 651, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .getting-started .mx-auto .nav, .everything .mx-auto .nav {
       border-bottom: none;
       padding-left: 25px;
       width: 50%;
       margin: 20px auto 0 auto; }
-      /* line 643, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 657, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .getting-started .mx-auto .nav .nav-item, .everything .mx-auto .nav .nav-item {
         font-weight: 700;
         padding: 0; }
-        /* line 646, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 660, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .getting-started .mx-auto .nav .nav-item .active, .everything .mx-auto .nav .nav-item .active {
           background-color: transparent;
           border: none; }
-        /* line 651, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 665, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .getting-started .mx-auto .nav .nav-item .active::after, .everything .mx-auto .nav .nav-item .active::after {
           content: "";
           width: 100%;
           height: 3px;
           background-color: red; }
-  /* line 661, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 675, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .getting-started .tab-content, .everything .tab-content {
     margin-top: 50px; }
-    /* line 665, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 679, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .getting-started .tab-content #home .row .col-md-4, .everything .tab-content #home .row .col-md-4, .getting-started .tab-content #menu1 .row .col-md-4, .everything .tab-content #menu1 .row .col-md-4 {
       text-align: center; }
-      /* line 667, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 681, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .getting-started .tab-content #home .row .col-md-4 h5, .everything .tab-content #home .row .col-md-4 h5, .getting-started .tab-content #menu1 .row .col-md-4 h5, .everything .tab-content #menu1 .row .col-md-4 h5 {
         margin-top: 30px;
         font-weight: 700;
         font-size: 17px; }
-      /* line 672, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 686, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .getting-started .tab-content #home .row .col-md-4 p, .everything .tab-content #home .row .col-md-4 p, .getting-started .tab-content #menu1 .row .col-md-4 p, .everything .tab-content #menu1 .row .col-md-4 p {
         font-size: 13px;
         margin-top: 10px;
         font-weight: 400;
         color: #54575C; }
 
-/* line 684, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 698, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .everything {
   background-color: #fff;
   height: 700px;
   /* Style the buttons inside the tab */
   /* Create an active/current "tab button" class */
   /* Style the tab content */ }
-  /* line 688, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 702, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .everything .mx-auto {
     margin-bottom: 70px; }
-  /* line 691, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 705, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .everything p {
     font-size: 15px;
     color: rgba(84, 87, 92, 0.8); }
-  /* line 695, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 709, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .everything .tab {
     float: left;
     background-color: transparent;
     width: 28%;
     height: 400px; }
-  /* line 703, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 717, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .everything .tab button {
     display: block;
     background-color: #385E70;
@@ -839,59 +857,59 @@ section, .loanMortages, .rentLoan {
     cursor: pointer;
     font-size: 15px;
     transition: ease-out 0.4s; }
-    /* line 716, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 730, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .everything .tab button span {
       font-size: 12px;
       font-weight: 500; }
-  /* line 721, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 735, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .everything .next-one {
     margin-top: 5px; }
-  /* line 726, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 740, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .everything .tab button:hover {
     box-shadow: inset 400px 0 0 0 #54575C; }
-  /* line 731, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 745, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .everything .tab button.active {
     background-color: rgba(56, 94, 112, 0.5); }
-  /* line 736, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 750, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .everything .tabcontent {
     float: right;
     background-color: #f7f7f7;
     width: 69%;
     border-left: none;
     height: 400px; }
-    /* line 742, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 756, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .everything .tabcontent .image, .everything .tabcontent .image_two, .everything .tabcontent .image_three, .everything .tabcontent .image_four, .everything .tabcontent .image_five {
       width: 100%;
       height: 300px;
       background-image: url(images/Loans.png);
       background-position: center;
       background-size: cover; }
-    /* line 749, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 763, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .everything .tabcontent .image_two {
       background-image: url(images/Savings.jpg); }
-    /* line 753, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 767, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .everything .tabcontent .image_three {
       background-image: url(images/Rental.jpg); }
-    /* line 757, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 771, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .everything .tabcontent .image_four {
       background-image: url(images/realty%20Finance.jpg); }
-    /* line 761, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 775, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .everything .tabcontent .image_five {
       background-image: url(images/Savings.jpg); }
-    /* line 765, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 779, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .everything .tabcontent p {
       color: #54575C;
       font-weight: 500;
       font-size: 12px;
       padding: 15px 30px;
       margin-bottom: 0; }
-    /* line 772, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 786, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .everything .tabcontent span {
       font-size: 12px;
       color: #385E70;
       font-weight: 500;
       padding-left: 30px; }
-      /* line 777, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 791, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .everything .tabcontent span i {
         background-color: #385E70;
         font-size: 13px;
@@ -899,32 +917,32 @@ section, .loanMortages, .rentLoan {
         color: #fff;
         border-radius: 100%; }
 
-/* line 787, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 801, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .who-we-are {
   background-image: url(images/About-Us.png);
   height: 500px;
   width: 100%;
   background-position: center;
   background-size: cover; }
-  /* line 793, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 807, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .who-we-are .text {
     width: 40%;
     float: right;
     margin-right: 70px;
     height: inherit;
     padding: 150px 50px 100px 0; }
-    /* line 799, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 813, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text h1 {
       color: #54575C;
       font-size: 30px;
       font-weight: 600; }
-    /* line 804, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 818, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text p {
       font-size: 15px;
       color: #54575C;
       font-weight: 400;
       line-height: 1.7em; }
-    /* line 810, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 824, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text button {
       width: 200px;
       height: 3em;
@@ -936,7 +954,7 @@ section, .loanMortages, .rentLoan {
       overflow: hidden;
       z-index: 1;
       transition: 0.5s; }
-    /* line 822, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 836, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text button span {
       position: absolute;
       width: 25%;
@@ -948,47 +966,47 @@ section, .loanMortages, .rentLoan {
       transition: 0.5s;
       transition-delay: calc((var(--n) - 1) * 0.1s);
       z-index: -1; }
-    /* line 835, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 849, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text button:hover {
       color: #385E70;
       box-shadow: 0px 3px 10px rgba(56, 94, 112, 0.7); }
-    /* line 840, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 854, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text button:hover span {
       transform: translateY(0) scale(2); }
-    /* line 843, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 857, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text button span:nth-child(1) {
       --n: 1; }
-    /* line 847, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 861, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text button span:nth-child(2) {
       --n: 2; }
-    /* line 851, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 865, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text button span:nth-child(3) {
       --n: 3; }
-    /* line 855, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 869, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .who-we-are .text button span:nth-child(4) {
       --n: 4; }
 
-/* line 861, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 875, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .location {
   height: 550px;
   padding-top: 80px; }
-  /* line 865, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 879, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .location .row .col-md-6 {
     height: 400px; }
-  /* line 868, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 882, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .location .row .description {
     background-color: #f7f7f7;
     padding: 50px 30px; }
-    /* line 871, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 885, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .location .row .description h5 {
       font-size: 11px;
       font-weight: 600; }
-    /* line 875, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 889, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .location .row .description h2 {
       font-size: 30px;
       color: #54575C;
       font-weight: 600; }
-    /* line 880, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 894, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .location .row .description li {
       list-style: none;
       color: #385E70;
@@ -996,34 +1014,34 @@ section, .loanMortages, .rentLoan {
       font-size: 12px;
       line-height: 30px;
       text-transform: uppercase; }
-      /* line 887, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 901, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .location .row .description li i {
         background-color: #385E70;
         font-size: 12px;
         margin-right: 10px;
         color: #fff;
         border-radius: 100%; }
-  /* line 896, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 910, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .location .row .image, .location .row .everything .tabcontent .image_two, .everything .tabcontent .location .row .image_two, .location .row .everything .tabcontent .image_three, .everything .tabcontent .location .row .image_three, .location .row .everything .tabcontent .image_four, .everything .tabcontent .location .row .image_four, .location .row .everything .tabcontent .image_five, .everything .tabcontent .location .row .image_five {
     padding: 0; }
 
-/* line 902, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 916, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .helpful-tool {
   margin-bottom: 80px; }
-  /* line 904, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 918, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .helpful-tool h2 {
     text-align: center;
     color: #54575C;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px; }
-  /* line 913, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 927, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .helpful-tool .first .inn {
     float: left; }
-  /* line 917, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 931, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .helpful-tool .col-md-4 {
     padding: 0; }
-    /* line 919, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 933, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .helpful-tool .col-md-4 .inn {
       width: 95%;
       border-radius: 7px;
@@ -1033,103 +1051,105 @@ section, .loanMortages, .rentLoan {
       padding: 20px 20px 10px 20px;
       background-color: #385E70;
       color: #fff; }
-      /* line 928, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 942, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .helpful-tool .col-md-4 .inn h3 {
         font-size: 18px;
         font-weight: 500; }
-      /* line 932, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 946, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .helpful-tool .col-md-4 .inn p {
         font-size: 12px;
         color: #f0f0f0;
         margin-top: 20px; }
-      /* line 937, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 951, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .helpful-tool .col-md-4 .inn .footer {
         text-transform: uppercase;
         font-weight: 500; }
-        /* line 940, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 954, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .helpful-tool .col-md-4 .inn .footer i {
           background-color: #fff;
           color: #385E70;
           border-radius: 100%;
           font-size: 12px;
           margin-right: 10px; }
-  /* line 950, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 964, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .helpful-tool .inn:hover {
     box-shadow: 0 10px 10px rgba(84, 87, 92, 0.3); }
 
-/* line 957, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 971, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .loanMortages, .rentLoan {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Mortgages-II.png);
   height: 400px;
   position: relative;
   background-position: top; }
-  /* line 965, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 979, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .loanMortages .caption h1, .rentLoan .caption h1 {
     font-weight: 400;
     font-size: 35px; }
-  /* line 969, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 983, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .loanMortages .caption p, .rentLoan .caption p {
     font-size: 13px;
     margin-top: 10px;
     line-height: 1.7em; }
 
-/* line 976, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 990, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .loan-content, .mortgage-content {
   margin-top: 100px; }
-  /* line 978, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 992, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .loan-content .top, .mortgage-content .top {
     width: 100%;
     height: 50px; }
-    /* line 981, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 995, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .loan-content .top h5, .mortgage-content .top h5 {
       display: inline-block;
       font-size: 25px;
       font-weight: 600;
       float: left; }
-    /* line 987, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1001, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .loan-content .top .line, .mortgage-content .top .line {
       width: 90%;
       height: 1px;
       background-color: rgba(84, 87, 92, 0.2);
       float: right;
       margin-top: 16px; }
-  /* line 995, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1009, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .loan-content .row, .mortgage-content .row {
     margin: 0; }
-  /* line 998, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1012, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .loan-content .col-md-3, .mortgage-content .col-md-3 {
     padding: 0; }
-    /* line 1001, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1015, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .loan-content .col-md-3 .inside, .mortgage-content .col-md-3 .inside {
       width: 270px;
       height: 380px;
-      border: 1px solid rgba(84, 87, 92, 0.2);
+      background-color: #f7f7f7;
       border-radius: 3px; }
-      /* line 1006, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1021, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .loan-content .col-md-3 .inside .image_1, .mortgage-content .col-md-3 .inside .image_1, .loan-content .col-md-3 .inside .image_2, .mortgage-content .col-md-3 .inside .image_2 {
         background-image: url(images/Rent%20Loan%203.png);
         background-size: cover;
         background-position: center;
         height: 180px;
         width: 100%; }
-      /* line 1013, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1028, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .loan-content .col-md-3 .inside .image_2, .mortgage-content .col-md-3 .inside .image_2 {
         background-image: url(images/Short%20term%20loan%202.png); }
-      /* line 1017, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1032, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .loan-content .col-md-3 .inside .text, .mortgage-content .col-md-3 .inside .text {
         padding: 15px; }
-        /* line 1019, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
-        .loan-content .col-md-3 .inside .text h3, .mortgage-content .col-md-3 .inside .text h3 {
-          font-size: 15px;
-          font-weight: 600; }
-        /* line 1023, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
-        .loan-content .col-md-3 .inside .text p, .mortgage-content .col-md-3 .inside .text p {
-          font-size: 10px;
-          margin-bottom: 70px;
-          color: #54575C;
-          font-weight: 400;
-          line-height: 1.7em; }
-        /* line 1030, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1034, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .loan-content .col-md-3 .inside .text .text_inside, .mortgage-content .col-md-3 .inside .text .text_inside {
+          height: 130px; }
+          /* line 1036, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          .loan-content .col-md-3 .inside .text .text_inside h3, .mortgage-content .col-md-3 .inside .text .text_inside h3 {
+            font-size: 15px;
+            font-weight: 600; }
+          /* line 1040, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          .loan-content .col-md-3 .inside .text .text_inside p, .mortgage-content .col-md-3 .inside .text .text_inside p {
+            font-size: 11px;
+            color: #54575C;
+            font-weight: 400;
+            line-height: 1.7em; }
+        /* line 1048, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .loan-content .col-md-3 .inside .text button, .mortgage-content .col-md-3 .inside .text button {
           width: 150px;
           float: left;
@@ -1139,50 +1159,50 @@ section, .loanMortages, .rentLoan {
           border: none;
           background-color: #385E70;
           border-radius: 4px; }
-        /* line 1040, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1058, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .loan-content .col-md-3 .inside .text .read, .mortgage-content .col-md-3 .inside .text .read {
           margin-right: 10px;
           float: right;
           margin-top: 9px;
           font-size: 11px; }
-          /* line 1045, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          /* line 1063, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
           .loan-content .col-md-3 .inside .text .read a, .mortgage-content .col-md-3 .inside .text .read a {
             color: #54575C; }
 
-/* line 1055, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 1073, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .mortgage-content {
   margin-bottom: 70px; }
-  /* line 1059, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1077, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .mortgage-content .top .line {
     width: 85%; }
 
-/* line 1067, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 1085, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .rentLoan {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Rent%20Loan%203.png);
   background-size: cover;
   background-position: center; }
 
-/* line 1074, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 1092, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .rentLoan_content h5 {
   font-size: 14px;
   font-weight: 500;
   margin-top: 10px; }
 
-/* line 1079, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 1097, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .rentLoan_content .col-md-8, .rentLoan_content .col-md-3 {
   margin-top: 60px; }
-  /* line 1081, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1099, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-8 h2, .rentLoan_content .col-md-3 h2 {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.7em; }
-  /* line 1086, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1104, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-8 p, .rentLoan_content .col-md-3 p {
     font-weight: 600;
     font-size: 16px;
     margin-top: 30px;
     color: #54575C; }
-  /* line 1092, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1110, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-8 ul, .rentLoan_content .col-md-3 ul {
     padding-left: 15px;
     list-style-type: square;
@@ -1190,22 +1210,22 @@ section, .loanMortages, .rentLoan {
     font-size: 12px;
     font-weight: 300;
     line-height: 2em; }
-  /* line 1100, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1118, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-8 li, .rentLoan_content .col-md-3 li {
     font-size: 12px;
     font-weight: 300;
     line-height: 2em; }
-  /* line 1105, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1123, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-8 .not, .rentLoan_content .col-md-3 .not {
     font-size: 9px;
     margin: 5px 0;
     font-weight: 400;
     cursor: pointer;
     transition: 0.2s ease-in; }
-    /* line 1111, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1129, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .rentLoan_content .col-md-8 .not a, .rentLoan_content .col-md-3 .not a {
       color: #385E70; }
-  /* line 1115, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1133, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-8 button, .rentLoan_content .col-md-3 button {
     width: 150px;
     height: 35px;
@@ -1214,75 +1234,75 @@ section, .loanMortages, .rentLoan {
     border: none;
     background-color: #385E70;
     border-radius: 4px; }
-  /* line 1124, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1142, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-8 .panel-group, .rentLoan_content .col-md-3 .panel-group {
     width: 70%; }
-    /* line 1126, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1144, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .rentLoan_content .col-md-8 .panel-group .panel-heading, .rentLoan_content .col-md-3 .panel-group .panel-heading {
       background-color: #f7f7f7;
       color: #54575C;
       padding: 15px 10px;
       margin-top: 10px;
       transition: 0.2s ease-in; }
-      /* line 1132, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1150, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .rentLoan_content .col-md-8 .panel-group .panel-heading a, .rentLoan_content .col-md-3 .panel-group .panel-heading a {
         color: #54575C; }
-        /* line 1134, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1152, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .rentLoan_content .col-md-8 .panel-group .panel-heading a h4, .rentLoan_content .col-md-3 .panel-group .panel-heading a h4 {
           font-size: 13px;
           margin: 0;
           font-weight: 500; }
-      /* line 1141, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1159, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .rentLoan_content .col-md-8 .panel-group .panel-heading a:hover, .rentLoan_content .col-md-3 .panel-group .panel-heading a:hover {
         text-decoration: none; }
-    /* line 1145, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1163, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .rentLoan_content .col-md-8 .panel-group .panel-heading:hover, .rentLoan_content .col-md-3 .panel-group .panel-heading:hover {
       background-color: #385E70;
       color: #f7f7f7; }
-      /* line 1148, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1166, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .rentLoan_content .col-md-8 .panel-group .panel-heading:hover a, .rentLoan_content .col-md-3 .panel-group .panel-heading:hover a {
         color: #f7f7f7; }
-    /* line 1152, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1170, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .rentLoan_content .col-md-8 .panel-group .panel-collapse, .rentLoan_content .col-md-3 .panel-group .panel-collapse {
       font-size: 13px;
       padding: 10px;
       border: 1px solid rgba(84, 87, 92, 0.2); }
 
-/* line 1164, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 1182, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .rentLoan_content .col-md-3 li {
   list-style: none; }
-  /* line 1166, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1184, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-3 li a {
     color: #385E70; }
-    /* line 1168, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1186, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .rentLoan_content .col-md-3 li a span {
       font-size: 15px;
       margin-right: 10px; }
-  /* line 1173, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1191, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-3 li a:hover {
     text-decoration: none;
     font-weight: 600; }
 
-/* line 1178, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 1196, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .rentLoan_content .col-md-3 .number {
-  width: 150px;
+  width: 200px;
   margin-top: 30px;
   border-top: 1px solid rgba(84, 87, 92, 0.3); }
-  /* line 1182, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1200, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-3 .number p {
     font-size: 12px;
     margin: 10px 0 10px 0;
     color: #000; }
-  /* line 1187, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1205, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .rentLoan_content .col-md-3 .number li {
     list-style: none; }
-    /* line 1189, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1207, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .rentLoan_content .col-md-3 .number li span {
       color: #385E70;
       font-weight: 700;
       margin-left: 10px; }
 
-/* line 1199, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 1217, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .about_us {
   margin-top: 100px;
   height: inherit;
@@ -1290,18 +1310,18 @@ section, .loanMortages, .rentLoan {
   /* Style the buttons inside the tab */
   /* Create an active/current "tab button" class */
   /* Style the tab content */ }
-  /* line 1203, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1221, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .about_us .tab {
     float: left;
     background-color: transparent;
     width: 25%;
     height: 400px; }
-    /* line 1208, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1226, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tab h3 {
       color: #000;
       font-weight: 700;
       font-size: 16px; }
-  /* line 1216, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1234, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .about_us .tab button {
     display: block;
     background-color: transparent;
@@ -1315,22 +1335,22 @@ section, .loanMortages, .rentLoan {
     transition: 0.3s;
     font-size: 12px;
     color: #54575C; }
-    /* line 1230, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1248, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tab button span {
       font-size: 15px;
       margin-right: 10px; }
-  /* line 1235, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1253, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .about_us .next-one {
     margin-top: 5px; }
-  /* line 1240, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1258, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .about_us .tab button:hover {
     color: #385E70;
     font-weight: 500; }
-  /* line 1246, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1264, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .about_us .tab button.active {
     color: #385E70;
     font-weight: 700; }
-  /* line 1252, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1270, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .about_us .tabcontent {
     float: right;
     background-color: transparent;
@@ -1338,21 +1358,21 @@ section, .loanMortages, .rentLoan {
     border-left: 1px solid rgba(84, 87, 92, 0.3);
     padding-left: 20px;
     height: auto; }
-    /* line 1259, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1277, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent h2 {
       font-size: 20px;
       font-weight: 700;
       margin-top: 20px; }
-    /* line 1264, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1282, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent h6 {
       font-size: 13px;
       font-weight: 700;
       margin-top: 35px; }
-    /* line 1269, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1287, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent .split {
       width: 100%;
       height: auto; }
-      /* line 1272, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1290, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .split .objective {
         width: 49%;
         background-color: rgba(247, 247, 247, 0.4);
@@ -1362,24 +1382,24 @@ section, .loanMortages, .rentLoan {
         border: 1px solid rgba(84, 87, 92, 0.3);
         float: left;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); }
-        /* line 1281, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1299, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .about_us .tabcontent .split .objective h5 {
           font-weight: 700;
           font-size: 15px; }
-      /* line 1286, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1304, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .split .float_right {
         float: right; }
-      /* line 1289, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1307, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .split .move_down {
         margin-top: 15px; }
-    /* line 1295, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1313, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent .head_core {
       margin-top: 0;
       margin-bottom: 20px; }
-    /* line 1299, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1317, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent .core_values {
       width: 100%; }
-      /* line 1301, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1319, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .core_values .value {
         width: 31%;
         height: 250px;
@@ -1392,43 +1412,43 @@ section, .loanMortages, .rentLoan {
         float: left;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         transition: 0.2s ease-in; }
-        /* line 1313, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1331, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .about_us .tabcontent .core_values .value h1 {
           font-size: 50px;
           font-weight: 700; }
-      /* line 1318, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1336, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .core_values .innovation, .about_us .tabcontent .core_values .excellence {
         margin-left: 2%; }
-      /* line 1321, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1339, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .core_values .value:hover {
         background-color: #385E70;
         color: #f7f7f7; }
-      /* line 1325, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1343, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .core_values .value.active {
         background-color: #385E70;
         color: #f7f7f7; }
-    /* line 1331, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1349, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent .image, .about_us .everything .tabcontent .image_two, .everything .about_us .tabcontent .image_two, .about_us .everything .tabcontent .image_three, .everything .about_us .tabcontent .image_three, .about_us .everything .tabcontent .image_four, .everything .about_us .tabcontent .image_four, .about_us .everything .tabcontent .image_five, .everything .about_us .tabcontent .image_five {
       width: 100%;
       height: 250px;
       background-image: url(images/Rent%20Loan%203.png);
       background-position: center;
       background-size: cover; }
-    /* line 1338, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1356, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent .profile {
       text-align: center;
       width: 130px;
       height: 250px;
       float: left;
       cursor: pointer; }
-      /* line 1344, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1362, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .profile .picture {
         width: 130px;
         height: 130px;
         border-radius: 100%;
         padding-top: 1px;
         background-color: #f7f7f7; }
-        /* line 1350, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1368, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .about_us .tabcontent .profile .picture .image, .about_us .everything .tabcontent .profile .picture .image_two, .everything .about_us .tabcontent .profile .picture .image_two, .about_us .everything .tabcontent .profile .picture .image_three, .everything .about_us .tabcontent .profile .picture .image_three, .about_us .everything .tabcontent .profile .picture .image_four, .everything .about_us .tabcontent .profile .picture .image_four, .about_us .everything .tabcontent .profile .picture .image_five, .everything .about_us .tabcontent .profile .picture .image_five {
           height: 90px;
           width: 90px;
@@ -1437,22 +1457,22 @@ section, .loanMortages, .rentLoan {
           background-image: url(images/Korede%20ceo.jpg);
           background-position: top;
           background-size: cover; }
-      /* line 1361, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1379, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .profile h5 {
         font-size: 13px;
         font-weight: 700;
         margin-top: 10px;
         margin-bottom: 0;
         text-transform: capitalize; }
-      /* line 1368, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1386, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .profile p {
         margin-top: -8px;
         font-weight: 300;
         font-size: 11px; }
-    /* line 1375, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1393, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent .left {
       margin-left: 20px; }
-    /* line 1378, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1396, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent p {
       color: #54575C;
       font-weight: 400;
@@ -1460,7 +1480,7 @@ section, .loanMortages, .rentLoan {
       padding: 15px 0;
       margin-top: 5px;
       margin-bottom: 0; }
-    /* line 1387, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1405, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent .career {
       width: 100%;
       background-color: rgba(247, 247, 247, 0.4);
@@ -1470,14 +1490,14 @@ section, .loanMortages, .rentLoan {
       border-radius: 4px;
       border: 1px solid rgba(84, 87, 92, 0.3);
       float: left; }
-      /* line 1397, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1415, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .about_us .tabcontent .career h5 {
         font-weight: 700;
         font-size: 15px; }
-    /* line 1402, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1420, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent .three {
       margin-bottom: 30px; }
-    /* line 1405, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1423, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .about_us .tabcontent button {
       width: 150px;
       height: 35px;

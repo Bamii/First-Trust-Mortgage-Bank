@@ -126,6 +126,12 @@
             line-height: 22px;
             color:#000;
             cursor:pointer;
+            a{
+                color:#000;
+            }
+            a:hover{
+                text-decoration: none;
+            }
         }
     }
     .savings{
