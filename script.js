@@ -25,9 +25,9 @@
             }
         });
     //Header Dropdown
-     $(".drop").click(function(){
+     $(".take_away").click(function(){
          $(".drop").slideUp();
-         $("header").addClass("back_down");
+         $("header").delay(2000).addClass("back_down");
      });
     $("#acct").hover(function(){
         $(".savings").slideUp();
@@ -118,6 +118,76 @@
             $(this).toggleClass('open');       
         }
     );
+     
+     var speed = 500;
+            var autoswitch = true;
+            var autoswicth_speed = 3000;
+           var $counter = 0;
+            var txtArray = ['.text_1','.text_2','.text_3', '.text_4'];
+            //console.log(imgArray);
+            var $new_ctn = 0;
+     
+            var $call = $(".call");
+     
+            $(".down").on('click',next);
+            $(".down").on('click',main);
+            function next(){
+                $counter++;
+                if($counter >= txtArray.length) $counter = 0;
+                $(".caption_text").hide();
+                $.each(txtArray, function(){
+                    $new_ctn++;
+                    if($new_ctn >= txtArray.length) $new_ctn = 0;
+                    
+                    if($counter === $new_ctn){
+                        console.log("Count is " + $counter+ " and new count is : " + $new_ctn);
+                        $(txtArray[$new_ctn]).fadeIn(500);
+                    }
+                });
+                
+                
+            }
+            $(".up").on('click',function(){
+                
+                $counter--;
+                console.log($counter);
+                if($counter < 0) $counter = txtArray.length - 1;
+                
+                $(".caption_text").hide();
+                $.each(txtArray, function(){
+                    $new_ctn--;
+                    if($new_ctn < 0) $new_ctn = txtArray.length - 1;
+                    
+                    if($counter === $new_ctn){
+                        console.log("Count is " + $counter+ " and new count is : " + $new_ctn);
+                       
+                        $(txtArray[$new_ctn]).fadeIn(500);
+                    }
+                }); 
+            });
+            
+            if(autoswitch == true){
+               setInterval(next, autoswicth_speed); }
+     
+     
+     //Image Upload
+     $('#img-uploader').click(function(e) {
+        $('#file-upload').click()
+      });
+			 
+			 
+      $('#file-upload').change(function() {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          var preview = document.querySelector('.avatar');
+          preview.style.backgroundImage = `url(${e.target.result})`;
+//          preview.style.maxWidth = '350px';
+//          preview.style.maxHeight = '350px';
+        }
+        reader.readAsDataURL(this.files[0]);
+      })
+     
+     
 });
 
 //Banner background image slide show
@@ -152,3 +222,5 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
