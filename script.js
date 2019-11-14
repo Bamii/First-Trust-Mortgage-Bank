@@ -106,7 +106,36 @@
     }); 
      
   
-  
+  //Jump to
+     $("#news").click(function(){
+		var $element = $(".news").offset().top;
+		//alert($element);
+		$("html,body").animate({
+			scrollTop : $element
+		}, 900);
+	});
+     $("#gallery").click(function(){
+		var $element = $(".gallery").offset().top;
+		//alert($element);
+		$("html,body").animate({
+			scrollTop : $element
+		}, 900);
+	});
+     
+      $("#video").click(function(){
+		var $element = $(".video").offset().top;
+		//alert($element);
+		$("html,body").animate({
+			scrollTop : $element
+		}, 900);
+	});
+     $("#document").click(function(){
+		var $element = $(".document").offset().top;
+		//alert($element);
+		$("html,body").animate({
+			scrollTop : $element
+		}, 900);
+	});
     
     $(".dropdown").hover(            
         function() {

@@ -1840,6 +1840,141 @@ section{
             .chaty,.cally{
                 margin-left: 2%;
             }
+            
+            .newy{
+                border-top:2px solid $theme-white;
+                margin-top:30px;
+                padding-top:70px;
+                .first{
+                    width:100%;
+                    height:140px;
+                    .pic{
+                        width:20%;
+                        height: 130px;
+                        float:left;
+                        background-image: url(images/Investors%20Relations@2x.png);
+                    }
+                    .text{
+                        width:78%;
+                        height:130px;
+                        float:right;
+                        //border:1px solid red;
+                        .date{
+                            height:40px;
+                            width:100%;
+                            h2{
+                                font-size:17px;
+                                display: inline-block;
+                                float:left;
+                                font-weight:500;
+                            }
+                            span{
+                                float:right;
+                                color:#b0b0b0;
+                                font-size:13px;
+                            }
+                        }
+                        p{
+                            float: left;
+                            font-size:12px;
+                            line-height: 1.7em;
+                        }
+                        a{
+                            color:$theme-blue;
+                            font-weight: 600;
+                            font-size:13px;
+                        }
+                    }
+                }
+                .sec{
+                    margin-top: 20px;
+                }
+            }
+            .gallery{
+                @extend .newy;
+                height: 860px;
+                .imagery{
+                    height:350px;
+                }
+                .first-image{
+                    width:28%;
+                    float:left;
+                    background-image: url(images/Mask%20Group%2034.png)
+                }
+                .second-image{
+                    width:70%;
+                    float:right;
+                    background-image: url(images/Mask%20Group%2032.png)
+                }
+                .third-image{
+                    width:49%;
+                    float:left;
+                    margin-top: 2%;
+                    background-image: url(images/Mask%20Group%2031.png)
+                }
+                .fourth-image{
+                    width:49%;
+                    float:right;
+                    margin-top: 2%;
+                    background-image: url(images/Mask%20Group%2034.png)
+                }
+            }
+            .video-div{
+                @extend .newy;
+                .video{
+                    height:470px;
+                    border:1px solid rgba($theme-grey,0.3);
+                    width:100%;
+                    border-radius:3px;
+                    background-color: $theme-white;
+                    .video-contain{
+                        height:400px;
+                        width:100%;
+                        background-image: url(images/media.jpg);
+                        background-size:cover;
+                    }
+                    h4{
+                        font-size:15px;
+                        padding-left:18px;
+                        margin-top:20px;
+                        margin-bottom: 0;
+                    }
+                    p{
+                        color:#b0b0b0;
+                        font-size:14px;
+                        margin: 0;
+                        padding-left:20px;
+                    }
+                }
+                
+            }
+            .document{
+                @extend .newy;
+                .document-one{
+                    //border:1px solid red;
+                    height: 60px;
+                    width:100%;
+                    h2{
+                        float:left;
+                        font-size:16px;
+                        font-weight:500;
+                    }
+                    button{
+                        height:40px;
+                        color:$theme-white;
+                        background-color:$theme-blue;
+                        border:none;
+                        float:right;
+                        border-radius:3px;
+                        font-size:13px;
+                        width:25%;
+                        i{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+            
         }
         .col-md-3{
             h2{
@@ -1848,18 +1983,18 @@ section{
             }
             li{
                 list-style: none;
-                a{
-                    color:$theme-blue;
-                    font-size:13px;
-                    span{
-                        font-size:15px;
-                        margin-right: 10px;
-                    }
+                color:$theme-blue;
+                font-size:13px;
+                span{
+                    font-size:15px;
+                    margin-right: 10px;
                 }
-                a:hover{
-                    text-decoration: none;
-                    font-weight: 600;
-                }
+
+            }
+            
+            li:hover{
+                text-decoration: none;
+                font-weight: 600;
             }
         }
     }

@@ -17,6 +17,10 @@
         color:$theme-grey;
         cursor: pointer;
         transition: 0.2s ease-in;
+        a{
+            font-size:11px;  
+            color:$theme-grey;
+        }
     }
       li:hover{
         color:$theme-blue;
