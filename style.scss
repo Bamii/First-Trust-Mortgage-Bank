@@ -1783,6 +1783,19 @@ section{
             color:$theme-white;
             margin-left: 20px;
             font-size:26px;
+            transition: 0.2s ease-in;
+        }
+        i:hover{
+            color:$theme-orange;
+            animation:big 0.2s ease-in forwards normal;
+        }
+        @keyframes big{
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.2);
+            }
         }
         .fa-facebook{
             margin-left: 0;
@@ -1804,8 +1817,9 @@ section{
             }
             .medial{
                 width:31.33%;
-                height:400px;
+                height:440px;
                 float:left;
+                box-shadow:0px 2px 5px rgba(#000,0.1);
                 ///border:1px solid red;
                 .head{
                     width:100%;
@@ -1815,6 +1829,8 @@ section{
                 span{
                     color:#b0b0b0;
                     font-size:13px;
+                    padding-left: 15px;
+                        
                 }
                 h2{
                     font-weight: 500;
@@ -1822,6 +1838,7 @@ section{
                     margin-top: 6px;
                     line-height:1.5em;
                     margin-bottom: 10px;
+                    padding-left: 15px;
                         
                 }
                 p{
@@ -1829,11 +1846,13 @@ section{
                     font-weight:300;
                     line-height:1.7em;
                     margin-top:10px;
+                    padding-left: 15px;
                 }
                 a{
                     color:$theme-blue;
                     font-weight: 600;
                     font-size:14px;
+                    padding-left: 15px;
                 }
                 
             }
@@ -1895,27 +1914,67 @@ section{
                 height: 860px;
                 .imagery{
                     height:350px;
+                    transition: 0.2s ease-in;
+                    overflow: hidden;
+                    cursor: pointer;
                 }
-                .first-image{
+                
+                .first-image:hover{
+                    animation:big 0.2s ease-in forwards normal;
+                }
+                .second-image:hover{
+                    animation:big 0.2s ease-in forwards normal;
+                }
+                .third-image:hover{
+                    animation:big 0.2s ease-in forwards normal;
+                }
+                .fourth-image:hover{
+                    animation:big 0.2s ease-in forwards normal;
+                }
+                @keyframes big{
+                    0%{
+                        transform: scale(1);
+                    }
+                    100%{
+                        transform: scale(1.2);
+                    }
+                }
+                .contain-gallery-one{
                     width:28%;
                     float:left;
-                    background-image: url(images/Mask%20Group%2034.png)
                 }
-                .second-image{
+                .contain-gallery-two{
                     width:70%;
                     float:right;
+                }
+                .contain-gallery-three{
+                    width:49%;
+                    float:left;
+                    margin-top: 2%;
+                }
+                .contain-gallery-four{
+                    width:49%;
+                    float:right;
+                    margin-top:2%;
+                }
+                .first-image{
+                    width:100%;
+                    height:100%;
+                    background-image: url(images/image.png)
+                }
+                .second-image{
+                    width:100%;
+                    height: 100%;
                     background-image: url(images/Mask%20Group%2032.png)
                 }
                 .third-image{
-                    width:49%;
-                    float:left;
-                    margin-top: 2%;
+                    width:100%;
+                    height:100%;
                     background-image: url(images/Mask%20Group%2031.png)
                 }
                 .fourth-image{
-                    width:49%;
-                    float:right;
-                    margin-top: 2%;
+                    width:100%;
+                    height:100%;
                     background-image: url(images/Mask%20Group%2034.png)
                 }
             }
@@ -1930,13 +1989,12 @@ section{
                     .video-contain{
                         height:400px;
                         width:100%;
-                        background-image: url(images/media.jpg);
-                        background-size:cover;
+                        
                     }
                     h4{
                         font-size:15px;
                         padding-left:18px;
-                        margin-top:20px;
+                        margin-top:12px;
                         margin-bottom: 0;
                     }
                     p{
@@ -1952,12 +2010,14 @@ section{
                 @extend .newy;
                 .document-one{
                     //border:1px solid red;
-                    height: 60px;
+                    height: 70px;
                     width:100%;
                     h2{
                         float:left;
                         font-size:16px;
                         font-weight:500;
+                        //display: inline-block;
+                        margin-top:10px;
                     }
                     button{
                         height:40px;

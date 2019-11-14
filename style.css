@@ -2111,172 +2111,224 @@ section, .loanMortages, .rentLoan {
     .post-footer-contact .social-media i {
       color: #f7f7f7;
       margin-left: 20px;
-      font-size: 26px; }
-    /* line 1787, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      font-size: 26px;
+      transition: 0.2s ease-in; }
+    /* line 1788, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    .post-footer-contact .social-media i:hover {
+      color: #EAAB26;
+      animation: big 0.2s ease-in forwards normal; }
+
+@keyframes big {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.2); } }
+    /* line 1800, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .post-footer-contact .social-media .fa-facebook {
       margin-left: 0; }
 
-/* line 1792, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+/* line 1805, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
 .medially {
   margin-top: 70px;
   margin-bottom: 70px; }
-  /* line 1795, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+  /* line 1808, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
   .medially .row {
     margin: 0; }
-    /* line 1798, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 1811, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .medially .row .col-md-8, .medially .row .rentLoan_content .col-md-3, .rentLoan_content .medially .row .col-md-3 {
       padding: 0; }
-      /* line 1800, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1813, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .medially .row .col-md-8 h2, .medially .row .rentLoan_content .col-md-3 h2, .rentLoan_content .medially .row .col-md-3 h2 {
         font-size: 20px;
         margin-bottom: 30px;
         font-weight: 700; }
-      /* line 1805, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1818, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .medially .row .col-md-8 .medial, .medially .row .rentLoan_content .col-md-3 .medial, .rentLoan_content .medially .row .col-md-3 .medial {
         width: 31.33%;
-        height: 400px;
-        float: left; }
-        /* line 1810, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        height: 440px;
+        float: left;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); }
+        /* line 1824, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .medial .head, .medially .row .rentLoan_content .col-md-3 .medial .head, .rentLoan_content .medially .row .col-md-3 .medial .head {
           width: 100%;
           height: 200px;
           background-image: url(images/Bitmap@2x.png); }
-        /* line 1815, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1829, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .medial span, .medially .row .rentLoan_content .col-md-3 .medial span, .rentLoan_content .medially .row .col-md-3 .medial span {
           color: #b0b0b0;
-          font-size: 13px; }
-        /* line 1819, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          font-size: 13px;
+          padding-left: 15px; }
+        /* line 1835, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .medial h2, .medially .row .rentLoan_content .col-md-3 .medial h2, .rentLoan_content .medially .row .col-md-3 .medial h2 {
           font-weight: 500;
           font-size: 15px;
           margin-top: 6px;
           line-height: 1.5em;
-          margin-bottom: 10px; }
-        /* line 1827, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          margin-bottom: 10px;
+          padding-left: 15px; }
+        /* line 1844, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .medial p, .medially .row .rentLoan_content .col-md-3 .medial p, .rentLoan_content .medially .row .col-md-3 .medial p {
           font-size: 11px;
           font-weight: 300;
           line-height: 1.7em;
-          margin-top: 10px; }
-        /* line 1833, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          margin-top: 10px;
+          padding-left: 15px; }
+        /* line 1851, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .medial a, .medially .row .rentLoan_content .col-md-3 .medial a, .rentLoan_content .medially .row .col-md-3 .medial a {
           color: #385E70;
           font-weight: 600;
-          font-size: 14px; }
-      /* line 1840, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          font-size: 14px;
+          padding-left: 15px; }
+      /* line 1859, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .medially .row .col-md-8 .chaty, .medially .row .rentLoan_content .col-md-3 .chaty, .rentLoan_content .medially .row .col-md-3 .chaty, .medially .row .col-md-8 .cally, .medially .row .rentLoan_content .col-md-3 .cally, .rentLoan_content .medially .row .col-md-3 .cally {
         margin-left: 2%; }
-      /* line 1844, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1863, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .medially .row .col-md-8 .newy, .medially .row .rentLoan_content .col-md-3 .newy, .rentLoan_content .medially .row .col-md-3 .newy, .medially .row .col-md-8 .gallery, .medially .row .rentLoan_content .col-md-3 .gallery, .rentLoan_content .medially .row .col-md-3 .gallery, .medially .row .col-md-8 .video-div, .medially .row .rentLoan_content .col-md-3 .video-div, .rentLoan_content .medially .row .col-md-3 .video-div, .medially .row .col-md-8 .document, .medially .row .rentLoan_content .col-md-3 .document, .rentLoan_content .medially .row .col-md-3 .document {
         border-top: 2px solid #f7f7f7;
         margin-top: 30px;
         padding-top: 70px; }
-        /* line 1848, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1867, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .newy .first, .medially .row .rentLoan_content .col-md-3 .newy .first, .rentLoan_content .medially .row .col-md-3 .newy .first, .medially .row .col-md-8 .gallery .first, .medially .row .rentLoan_content .col-md-3 .gallery .first, .rentLoan_content .medially .row .col-md-3 .gallery .first, .medially .row .col-md-8 .video-div .first, .medially .row .rentLoan_content .col-md-3 .video-div .first, .rentLoan_content .medially .row .col-md-3 .video-div .first, .medially .row .col-md-8 .document .first, .medially .row .rentLoan_content .col-md-3 .document .first, .rentLoan_content .medially .row .col-md-3 .document .first {
           width: 100%;
           height: 140px; }
-          /* line 1851, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          /* line 1870, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
           .medially .row .col-md-8 .newy .first .pic, .medially .row .rentLoan_content .col-md-3 .newy .first .pic, .rentLoan_content .medially .row .col-md-3 .newy .first .pic, .medially .row .col-md-8 .gallery .first .pic, .medially .row .rentLoan_content .col-md-3 .gallery .first .pic, .rentLoan_content .medially .row .col-md-3 .gallery .first .pic, .medially .row .col-md-8 .video-div .first .pic, .medially .row .rentLoan_content .col-md-3 .video-div .first .pic, .rentLoan_content .medially .row .col-md-3 .video-div .first .pic, .medially .row .col-md-8 .document .first .pic, .medially .row .rentLoan_content .col-md-3 .document .first .pic, .rentLoan_content .medially .row .col-md-3 .document .first .pic {
             width: 20%;
             height: 130px;
             float: left;
             background-image: url(images/Investors%20Relations@2x.png); }
-          /* line 1857, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          /* line 1876, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
           .medially .row .col-md-8 .newy .first .text, .medially .row .rentLoan_content .col-md-3 .newy .first .text, .rentLoan_content .medially .row .col-md-3 .newy .first .text, .medially .row .col-md-8 .gallery .first .text, .medially .row .rentLoan_content .col-md-3 .gallery .first .text, .rentLoan_content .medially .row .col-md-3 .gallery .first .text, .medially .row .col-md-8 .video-div .first .text, .medially .row .rentLoan_content .col-md-3 .video-div .first .text, .rentLoan_content .medially .row .col-md-3 .video-div .first .text, .medially .row .col-md-8 .document .first .text, .medially .row .rentLoan_content .col-md-3 .document .first .text, .rentLoan_content .medially .row .col-md-3 .document .first .text {
             width: 78%;
             height: 130px;
             float: right; }
-            /* line 1862, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+            /* line 1881, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
             .medially .row .col-md-8 .newy .first .text .date, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date, .medially .row .col-md-8 .gallery .first .text .date, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date, .medially .row .col-md-8 .video-div .first .text .date, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date, .medially .row .col-md-8 .document .first .text .date, .medially .row .rentLoan_content .col-md-3 .document .first .text .date, .rentLoan_content .medially .row .col-md-3 .document .first .text .date {
               height: 40px;
               width: 100%; }
-              /* line 1865, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+              /* line 1884, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
               .medially .row .col-md-8 .newy .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date h2, .medially .row .col-md-8 .gallery .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date h2, .medially .row .col-md-8 .video-div .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date h2, .medially .row .col-md-8 .document .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .document .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .document .first .text .date h2 {
                 font-size: 17px;
                 display: inline-block;
                 float: left;
                 font-weight: 500; }
-              /* line 1871, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+              /* line 1890, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
               .medially .row .col-md-8 .newy .first .text .date span, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date span, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date span, .medially .row .col-md-8 .gallery .first .text .date span, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date span, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date span, .medially .row .col-md-8 .video-div .first .text .date span, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date span, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date span, .medially .row .col-md-8 .document .first .text .date span, .medially .row .rentLoan_content .col-md-3 .document .first .text .date span, .rentLoan_content .medially .row .col-md-3 .document .first .text .date span {
                 float: right;
                 color: #b0b0b0;
                 font-size: 13px; }
-            /* line 1877, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+            /* line 1896, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
             .medially .row .col-md-8 .newy .first .text p, .medially .row .rentLoan_content .col-md-3 .newy .first .text p, .rentLoan_content .medially .row .col-md-3 .newy .first .text p, .medially .row .col-md-8 .gallery .first .text p, .medially .row .rentLoan_content .col-md-3 .gallery .first .text p, .rentLoan_content .medially .row .col-md-3 .gallery .first .text p, .medially .row .col-md-8 .video-div .first .text p, .medially .row .rentLoan_content .col-md-3 .video-div .first .text p, .rentLoan_content .medially .row .col-md-3 .video-div .first .text p, .medially .row .col-md-8 .document .first .text p, .medially .row .rentLoan_content .col-md-3 .document .first .text p, .rentLoan_content .medially .row .col-md-3 .document .first .text p {
               float: left;
               font-size: 12px;
               line-height: 1.7em; }
-            /* line 1882, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+            /* line 1901, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
             .medially .row .col-md-8 .newy .first .text a, .medially .row .rentLoan_content .col-md-3 .newy .first .text a, .rentLoan_content .medially .row .col-md-3 .newy .first .text a, .medially .row .col-md-8 .gallery .first .text a, .medially .row .rentLoan_content .col-md-3 .gallery .first .text a, .rentLoan_content .medially .row .col-md-3 .gallery .first .text a, .medially .row .col-md-8 .video-div .first .text a, .medially .row .rentLoan_content .col-md-3 .video-div .first .text a, .rentLoan_content .medially .row .col-md-3 .video-div .first .text a, .medially .row .col-md-8 .document .first .text a, .medially .row .rentLoan_content .col-md-3 .document .first .text a, .rentLoan_content .medially .row .col-md-3 .document .first .text a {
               color: #385E70;
               font-weight: 600;
               font-size: 13px; }
-        /* line 1889, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1908, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .newy .sec, .medially .row .rentLoan_content .col-md-3 .newy .sec, .rentLoan_content .medially .row .col-md-3 .newy .sec, .medially .row .col-md-8 .gallery .sec, .medially .row .rentLoan_content .col-md-3 .gallery .sec, .rentLoan_content .medially .row .col-md-3 .gallery .sec, .medially .row .col-md-8 .video-div .sec, .medially .row .rentLoan_content .col-md-3 .video-div .sec, .rentLoan_content .medially .row .col-md-3 .video-div .sec, .medially .row .col-md-8 .document .sec, .medially .row .rentLoan_content .col-md-3 .document .sec, .rentLoan_content .medially .row .col-md-3 .document .sec {
           margin-top: 20px; }
-      /* line 1893, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1912, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .medially .row .col-md-8 .gallery, .medially .row .rentLoan_content .col-md-3 .gallery, .rentLoan_content .medially .row .col-md-3 .gallery {
         height: 860px; }
-        /* line 1896, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
-        .medially .row .col-md-8 .gallery .imagery, .medially .row .rentLoan_content .col-md-3 .gallery .imagery, .rentLoan_content .medially .row .col-md-3 .gallery .imagery {
-          height: 350px; }
-        /* line 1899, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
-        .medially .row .col-md-8 .gallery .first-image, .medially .row .rentLoan_content .col-md-3 .gallery .first-image, .rentLoan_content .medially .row .col-md-3 .gallery .first-image {
-          width: 28%;
-          float: left;
-          background-image: url(images/Mask%20Group%2034.png); }
-        /* line 1904, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
-        .medially .row .col-md-8 .gallery .second-image, .medially .row .rentLoan_content .col-md-3 .gallery .second-image, .rentLoan_content .medially .row .col-md-3 .gallery .second-image {
-          width: 70%;
-          float: right;
-          background-image: url(images/Mask%20Group%2032.png); }
-        /* line 1909, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
-        .medially .row .col-md-8 .gallery .third-image, .medially .row .rentLoan_content .col-md-3 .gallery .third-image, .rentLoan_content .medially .row .col-md-3 .gallery .third-image {
-          width: 49%;
-          float: left;
-          margin-top: 2%;
-          background-image: url(images/Mask%20Group%2031.png); }
         /* line 1915, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
-        .medially .row .col-md-8 .gallery .fourth-image, .medially .row .rentLoan_content .col-md-3 .gallery .fourth-image, .rentLoan_content .medially .row .col-md-3 .gallery .fourth-image {
+        .medially .row .col-md-8 .gallery .imagery, .medially .row .rentLoan_content .col-md-3 .gallery .imagery, .rentLoan_content .medially .row .col-md-3 .gallery .imagery {
+          height: 350px;
+          transition: 0.2s ease-in;
+          overflow: hidden;
+          cursor: pointer; }
+        /* line 1922, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .first-image:hover, .medially .row .rentLoan_content .col-md-3 .gallery .first-image:hover, .rentLoan_content .medially .row .col-md-3 .gallery .first-image:hover {
+          animation: big 0.2s ease-in forwards normal; }
+        /* line 1925, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .second-image:hover, .medially .row .rentLoan_content .col-md-3 .gallery .second-image:hover, .rentLoan_content .medially .row .col-md-3 .gallery .second-image:hover {
+          animation: big 0.2s ease-in forwards normal; }
+        /* line 1928, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .third-image:hover, .medially .row .rentLoan_content .col-md-3 .gallery .third-image:hover, .rentLoan_content .medially .row .col-md-3 .gallery .third-image:hover {
+          animation: big 0.2s ease-in forwards normal; }
+        /* line 1931, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .fourth-image:hover, .medially .row .rentLoan_content .col-md-3 .gallery .fourth-image:hover, .rentLoan_content .medially .row .col-md-3 .gallery .fourth-image:hover {
+          animation: big 0.2s ease-in forwards normal; }
+
+@keyframes big {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.2); } }
+        /* line 1942, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .contain-gallery-one, .medially .row .rentLoan_content .col-md-3 .gallery .contain-gallery-one, .rentLoan_content .medially .row .col-md-3 .gallery .contain-gallery-one {
+          width: 28%;
+          float: left; }
+        /* line 1946, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .contain-gallery-two, .medially .row .rentLoan_content .col-md-3 .gallery .contain-gallery-two, .rentLoan_content .medially .row .col-md-3 .gallery .contain-gallery-two {
+          width: 70%;
+          float: right; }
+        /* line 1950, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .contain-gallery-three, .medially .row .rentLoan_content .col-md-3 .gallery .contain-gallery-three, .rentLoan_content .medially .row .col-md-3 .gallery .contain-gallery-three {
+          width: 49%;
+          float: left;
+          margin-top: 2%; }
+        /* line 1955, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .contain-gallery-four, .medially .row .rentLoan_content .col-md-3 .gallery .contain-gallery-four, .rentLoan_content .medially .row .col-md-3 .gallery .contain-gallery-four {
           width: 49%;
           float: right;
-          margin-top: 2%;
+          margin-top: 2%; }
+        /* line 1960, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .first-image, .medially .row .rentLoan_content .col-md-3 .gallery .first-image, .rentLoan_content .medially .row .col-md-3 .gallery .first-image {
+          width: 100%;
+          height: 100%;
+          background-image: url(images/image.png); }
+        /* line 1965, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .second-image, .medially .row .rentLoan_content .col-md-3 .gallery .second-image, .rentLoan_content .medially .row .col-md-3 .gallery .second-image {
+          width: 100%;
+          height: 100%;
+          background-image: url(images/Mask%20Group%2032.png); }
+        /* line 1970, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .third-image, .medially .row .rentLoan_content .col-md-3 .gallery .third-image, .rentLoan_content .medially .row .col-md-3 .gallery .third-image {
+          width: 100%;
+          height: 100%;
+          background-image: url(images/Mask%20Group%2031.png); }
+        /* line 1975, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        .medially .row .col-md-8 .gallery .fourth-image, .medially .row .rentLoan_content .col-md-3 .gallery .fourth-image, .rentLoan_content .medially .row .col-md-3 .gallery .fourth-image {
+          width: 100%;
+          height: 100%;
           background-image: url(images/Mask%20Group%2034.png); }
-      /* line 1924, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 1983, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .medially .row .col-md-8 .video-div .video, .medially .row .rentLoan_content .col-md-3 .video-div .video, .rentLoan_content .medially .row .col-md-3 .video-div .video {
         height: 470px;
         border: 1px solid rgba(84, 87, 92, 0.3);
         width: 100%;
         border-radius: 3px;
         background-color: #f7f7f7; }
-        /* line 1930, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 1989, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .video-div .video .video-contain, .medially .row .rentLoan_content .col-md-3 .video-div .video .video-contain, .rentLoan_content .medially .row .col-md-3 .video-div .video .video-contain {
           height: 400px;
-          width: 100%;
-          background-image: url(images/media.jpg);
-          background-size: cover; }
-        /* line 1936, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          width: 100%; }
+        /* line 1994, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .video-div .video h4, .medially .row .rentLoan_content .col-md-3 .video-div .video h4, .rentLoan_content .medially .row .col-md-3 .video-div .video h4 {
           font-size: 15px;
           padding-left: 18px;
-          margin-top: 20px;
+          margin-top: 12px;
           margin-bottom: 0; }
-        /* line 1942, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 2000, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .video-div .video p, .medially .row .rentLoan_content .col-md-3 .video-div .video p, .rentLoan_content .medially .row .col-md-3 .video-div .video p {
           color: #b0b0b0;
           font-size: 14px;
           margin: 0;
           padding-left: 20px; }
-      /* line 1953, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 2011, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .medially .row .col-md-8 .document .document-one, .medially .row .rentLoan_content .col-md-3 .document .document-one, .rentLoan_content .medially .row .col-md-3 .document .document-one {
-        height: 60px;
+        height: 70px;
         width: 100%; }
-        /* line 1957, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+        /* line 2015, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .document .document-one h2, .medially .row .rentLoan_content .col-md-3 .document .document-one h2, .rentLoan_content .medially .row .col-md-3 .document .document-one h2 {
           float: left;
           font-size: 16px;
-          font-weight: 500; }
-        /* line 1962, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          font-weight: 500;
+          margin-top: 10px; }
+        /* line 2022, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
         .medially .row .col-md-8 .document .document-one button, .medially .row .rentLoan_content .col-md-3 .document .document-one button, .rentLoan_content .medially .row .col-md-3 .document .document-one button {
           height: 40px;
           color: #f7f7f7;
@@ -2286,23 +2338,23 @@ section, .loanMortages, .rentLoan {
           border-radius: 3px;
           font-size: 13px;
           width: 25%; }
-          /* line 1971, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+          /* line 2031, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
           .medially .row .col-md-8 .document .document-one button i, .medially .row .rentLoan_content .col-md-3 .document .document-one button i, .rentLoan_content .medially .row .col-md-3 .document .document-one button i {
             margin-left: 15px; }
-    /* line 1980, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 2040, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .medially .row .col-md-3 h2 {
       font-size: 12px;
       font-weight: 600; }
-    /* line 1984, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 2044, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .medially .row .col-md-3 li {
       list-style: none;
       color: #385E70;
       font-size: 13px; }
-      /* line 1988, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+      /* line 2048, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
       .medially .row .col-md-3 li span {
         font-size: 15px;
         margin-right: 10px; }
-    /* line 1995, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
+    /* line 2055, C:/Users/GRACE/Documents/projects/Firstbank/style.scss */
     .medially .row .col-md-3 li:hover {
       text-decoration: none;
       font-weight: 600; }
