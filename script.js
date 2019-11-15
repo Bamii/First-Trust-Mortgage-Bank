@@ -221,7 +221,7 @@
 
 //Banner background image slide show
  var folder = "";
- var pictures=["images/Family-II.png", "images/5d759496aed63.png", "images/realty%20Finance.jpg", "images/Savings.jpg"];
+ var pictures=["images/Rental.jpg", "images/realty%20Finance.jpg", "images/Water.jpg", "images/Savings.jpg"];
  var num = 0;
           
     function main(){

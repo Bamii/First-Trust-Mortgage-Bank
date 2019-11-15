@@ -113,8 +113,9 @@ section{
     position: relative;
     overflow-y: hidden;
     width:100%;
-    background-image:linear-gradient(to bottom right, rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/Family-II.png);
-    background-position: right;
+    background-size: cover;
+    background-image:linear-gradient(to bottom right, rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/Rental.jpg);
+    background-position: center;
     background-attachment: fixed;
     header{
         background-color:transparent;
