@@ -75,7 +75,7 @@
         $(".savings").slideUp();
         $(".media").slideUp();
         $(".investor").slideUp();
-        $(".about-us").delay(500).slideToggle()
+        $(".about-us").delay(500).slideDown()
         $("header").addClass("hovered");
         $(".hide").css({"display": "inline-block"});
         $(".show").css({"display": "none"});

@@ -64,6 +64,43 @@
             }
         }
     }
+
+    @media only screen and (max-width:320px){
+        height:500px;
+        p{
+            margin-bottom:5px;
+        }
+        .col-md-4{
+            input{
+                width:80%;
+            }
+        }
+        
+    }
+
+    @media only screen and (min-width:321px) and (max-width:540px){
+        height:500px;
+        p{
+            margin-bottom:5px;
+        }
+        .col-md-4{
+            input{
+                width:80%;
+            }
+        }
+    }
+
+    @media only screen and (min-width:541px) and (max-width:720px){
+        height:500px;
+        p{
+            margin-bottom:5px;
+        }
+        .col-md-4{
+            input{
+                width:80%;
+            }
+        }
+    }
   
     
 }
