@@ -65,6 +65,11 @@
                 transform: scale3d(1, 1, 1);
               }
             }
+            i{
+                display:none !important;
+                color:#000;
+                float:right;
+            }
         }
         .col-md-3,.col-md-9{
             padding-left: 0;
@@ -143,12 +148,18 @@
             height:80px;
             padding-top:5px;
             .logo{
-                margin-left:15px;
+                margin-left:0px;
                 .main{
                     img{
                         height:32px;
                         width:130px;
                     }
+                }
+                i{
+                    display: block !important;
+                    float: right;
+                    font-size:20px;
+                    margin-top:15px;
                 }
             }
             .top{
@@ -160,10 +171,62 @@
         }
 
         @media only screen and (min-width:321px) and (max-width:540px){
-
+            background-color:$theme-white;
+            height:80px;
+            padding-top:5px;
+            .container{
+                padding:0 30px;
+            }
+            .logo{
+                margin-left:0;
+                .main{
+                    img{
+                        height:32px;
+                        width:130px;
+                    }
+                }
+                i{
+                    display: block !important;
+                    float: right;
+                    font-size:20px;
+                    margin-top:15px;
+                }
+            }
+            .top{
+                display:none;
+            }
+            ul{
+                display:none;
+            }
         }
         @media only screen and (min-width:541px) and (max-width:720px){
-
+            background-color:$theme-white;
+            height:80px;
+            padding-top:5px;
+            .container{
+                padding:0 50px;
+            }
+            .logo{
+                margin-left:0;
+                .main{
+                    img{
+                        height:32px;
+                        width:130px;
+                    }
+                }
+                i{
+                    display: block !important;
+                    float: right;
+                    font-size:20px;
+                    margin-top:15px;
+                }
+            }
+            .top{
+                display:none;
+            }
+            ul{
+                display:none;
+            }
         }
         
     }

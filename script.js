@@ -3,6 +3,14 @@
     $(this).tab('show');
   });
 
+  $(".fa-bars").click(function(){
+    $(".modal-content").show();
+})
+
+$(".fa-times").click(function(){
+    $(".modal-content").slideUp();
+})
+
       $(window).scroll(function(){
             if ($(window).scrollTop() >= 120) {
                 $('.header').addClass('sticky');

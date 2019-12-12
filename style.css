@@ -60,6 +60,11 @@
     transform: scale3d(1, 1, 1);
   }
 }
+.header .logo i {
+  display: none !important;
+  color: #000;
+  float: right;
+}
 .header .col-md-3, .header .col-md-9 {
   padding-left: 0;
   padding-right: 0;
@@ -136,11 +141,17 @@
     padding-top: 5px;
   }
   .header .logo {
-    margin-left: 15px;
+    margin-left: 0px;
   }
   .header .logo .main img {
     height: 32px;
     width: 130px;
+  }
+  .header .logo i {
+    display: block !important;
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
   }
   .header .top {
     display: none;
@@ -149,6 +160,65 @@
     display: none;
   }
 }
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .header {
+    background-color: #f7f7f7;
+    height: 80px;
+    padding-top: 5px;
+  }
+  .header .container {
+    padding: 0 30px;
+  }
+  .header .logo {
+    margin-left: 0;
+  }
+  .header .logo .main img {
+    height: 32px;
+    width: 130px;
+  }
+  .header .logo i {
+    display: block !important;
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .header .top {
+    display: none;
+  }
+  .header ul {
+    display: none;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .header {
+    background-color: #f7f7f7;
+    height: 80px;
+    padding-top: 5px;
+  }
+  .header .container {
+    padding: 0 50px;
+  }
+  .header .logo {
+    margin-left: 0;
+  }
+  .header .logo .main img {
+    height: 32px;
+    width: 130px;
+  }
+  .header .logo i {
+    display: block !important;
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .header .top {
+    display: none;
+  }
+  .header ul {
+    display: none;
+  }
+}
+
 .account, .Loan, .investor, .media, .about-us, .savings {
   display: none;
   width: 100%;
@@ -235,6 +305,9 @@
   color: #385E70;
   font-weight: 700;
 }
+.main-footer .col-12 {
+  display: none;
+}
 .main-footer .col-md-4 {
   color: #54575C;
 }
@@ -271,18 +344,45 @@
 }
 @media only screen and (max-width: 320px) {
   .main-footer {
-    height: 500px;
+    height: 380px;
+    padding-top: 20px;
   }
   .main-footer p {
     margin-bottom: 5px;
   }
+  .main-footer .display-mobile {
+    display: none;
+  }
+  .main-footer .col-12 {
+    display: block;
+  }
+  .main-footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+  .main-footer .col-md-4 p {
+    font-size: 13px;
+  }
   .main-footer .col-md-4 input, .main-footer .contact .row .col-md-4 form textarea, .contact .row .main-footer .col-md-4 form textarea {
-    width: 80%;
+    width: 70%;
+  }
+  .main-footer .col-md-4 button {
+    width: 30%;
+  }
+  .main-footer .mobile-none {
+    display: none;
+  }
+  .main-footer .col-6 {
+    border-top: 1px solid rgba(84, 87, 92, 0.2);
+    padding-top: 20px;
+  }
+  .main-footer .col-md-1 li {
+    float: left;
+    margin-right: 20px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .main-footer {
-    height: 500px;
+    height: 380px;
   }
   .main-footer p {
     margin-bottom: 5px;
@@ -293,7 +393,7 @@
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   .main-footer {
-    height: 500px;
+    height: 380px;
   }
   .main-footer p {
     margin-bottom: 5px;
@@ -313,7 +413,11 @@
   color: #f0f0f0;
   font-size: 12px;
 }
-
+@media only screen and (max-width: 320px) {
+  .post-footer {
+    height: 70px !important;
+  }
+}
 *,
 *:after,
 *:before {
@@ -557,6 +661,99 @@ button[type=submit]:focus {
   border-radius: 100%;
 }
 
+.modal-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  background-color: #fff;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+}
+.modal-content .head {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.modal-content .head i {
+  float: right;
+  color: #54575C;
+  font-size: 18px;
+}
+.modal-content .panel-group {
+  width: 100%;
+}
+.modal-content .panel-group .panel-heading {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+  transition: 0.2s ease-in;
+}
+.modal-content .panel-group .panel-heading a {
+  color: #000;
+}
+.modal-content .panel-group .panel-heading a h4 {
+  font-size: 17px;
+  margin: 0;
+  font-weight: 500;
+}
+.modal-content .panel-group .panel-heading i {
+  float: right;
+  color: #385E70;
+  cursor: pointer;
+}
+.modal-content .panel-group .panel-heading a:hover {
+  text-decoration: none;
+}
+.modal-content .panel-group .panel-collapse {
+  font-size: 13px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+.modal-content .panel-group .panel-collapse p {
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.modal-content .panel-group .panel-collapse li {
+  list-style: none;
+}
+.modal-content .panel-group .panel-collapse li a {
+  color: #385E70;
+}
+.modal-content .panel-group .panel-collapse li a:hover {
+  text-decoration: none;
+}
+.modal-content .panel-group .panel-collapse li:hover {
+  font-weight: 700;
+}
+.modal-content h2 {
+  color: #54575C;
+  font-weight: 700;
+  margin-top: 14px;
+  margin-left: 15px;
+}
+.modal-content .quick {
+  padding-left: 15px;
+}
+.modal-content .quick h2 {
+  font-size: 14px;
+}
+.modal-content .quick li {
+  list-style: none;
+  margin-top: 10px;
+}
+.modal-content .quick li a {
+  color: #385E70;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -723,6 +920,11 @@ section header .logo .main, .loanMortages header .logo .main, .rentLoan header .
     transform: scale3d(1, 1, 1);
   }
 }
+section header .logo i, .loanMortages header .logo i, .rentLoan header .logo i {
+  display: none !important;
+  color: #000;
+  float: right;
+}
 section header .col-md-3, .loanMortages header .col-md-3, .rentLoan header .col-md-3, section header .col-md-9, .loanMortages header .col-md-9, .rentLoan header .col-md-9 {
   padding-left: 0;
   padding-right: 0;
@@ -803,9 +1005,18 @@ section header ul .next_one, .loanMortages header ul .next_one, .rentLoan header
     height: 80px;
     padding-top: 5px;
   }
+  section header .logo, .loanMortages header .logo, .rentLoan header .logo {
+    margin-left: 0;
+  }
   section header .logo .main img, .loanMortages header .logo .main img, .rentLoan header .logo .main img {
     height: 32px;
     width: 130px;
+  }
+  section header .logo i, .loanMortages header .logo i, .rentLoan header .logo i {
+    display: block !important;
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
   }
   section header .top, .loanMortages header .top, .rentLoan header .top {
     display: none;
@@ -820,9 +1031,50 @@ section header ul .next_one, .loanMortages header ul .next_one, .rentLoan header
     height: 80px;
     padding-top: 5px;
   }
+  section header .container, .loanMortages header .container, .rentLoan header .container {
+    padding: 0 30px;
+  }
+  section header .logo, .loanMortages header .logo, .rentLoan header .logo {
+    margin-left: 0;
+  }
   section header .logo .main img, .loanMortages header .logo .main img, .rentLoan header .logo .main img {
     height: 32px;
     width: 130px;
+  }
+  section header .logo i, .loanMortages header .logo i, .rentLoan header .logo i {
+    display: block !important;
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  section header .top, .loanMortages header .top, .rentLoan header .top {
+    display: none;
+  }
+  section header ul, .loanMortages header ul, .rentLoan header ul {
+    display: none;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  section header, .loanMortages header, .rentLoan header {
+    background-color: #f7f7f7;
+    height: 80px;
+    padding-top: 5px;
+  }
+  section header .container, .loanMortages header .container, .rentLoan header .container {
+    padding: 0 50px;
+  }
+  section header .logo, .loanMortages header .logo, .rentLoan header .logo {
+    margin-left: 0;
+  }
+  section header .logo .main img, .loanMortages header .logo .main img, .rentLoan header .logo .main img {
+    height: 32px;
+    width: 130px;
+  }
+  section header .logo i, .loanMortages header .logo i, .rentLoan header .logo i {
+    display: block !important;
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
   }
   section header .top, .loanMortages header .top, .rentLoan header .top {
     display: none;
@@ -1054,6 +1306,22 @@ section .caption button span:nth-child(4), .loanMortages .caption button span:nt
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   section .caption, .loanMortages .caption, .rentLoan .caption {
     padding-top: 70px;
+    padding: 0 30px;
+  }
+  section .caption .caption_text, .loanMortages .caption .caption_text, .rentLoan .caption .caption_text {
+    width: 95%;
+  }
+  section .caption h1, .loanMortages .caption h1, .rentLoan .caption h1 {
+    font-size: 30px;
+  }
+  section .caption p, .loanMortages .caption p, .rentLoan .caption p {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  section .caption, .loanMortages .caption, .rentLoan .caption {
+    padding-top: 70px;
+    padding: 0 50px;
   }
   section .caption .caption_text, .loanMortages .caption .caption_text, .rentLoan .caption .caption_text {
     width: 95%;
@@ -1129,17 +1397,17 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 }
 @media only screen and (max-width: 320px) {
   section, .loanMortages, .rentLoan {
-    height: 450px;
+    height: 420px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   section, .loanMortages, .rentLoan {
-    height: 450px;
+    height: 400px;
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   section, .loanMortages, .rentLoan {
-    height: 450px;
+    height: 400px;
   }
 }
 
@@ -1279,6 +1547,9 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   margin-right: 20px;
   cursor: pointer;
 }
+.why .row .mobile-carousel {
+  display: none;
+}
 .why .row .col-md-4 {
   padding: 0;
 }
@@ -1333,7 +1604,10 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     margin-top: 0;
   }
   .why .mx-auto input, .why .mx-auto .contact .row .col-md-4 form textarea, .contact .row .col-md-4 form .why .mx-auto textarea {
-    width: 100px;
+    width: 25%;
+  }
+  .why .row {
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
@@ -1350,7 +1624,10 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     margin-top: 0;
   }
   .why .mx-auto input, .why .mx-auto .contact .row .col-md-4 form textarea, .contact .row .col-md-4 form .why .mx-auto textarea {
-    width: 70%;
+    width: 40%;
+  }
+  .why .row {
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
@@ -1367,7 +1644,10 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     margin-top: 0;
   }
   .why .mx-auto input, .why .mx-auto .contact .row .col-md-4 form textarea, .contact .row .col-md-4 form .why .mx-auto textarea {
-    width: 100px;
+    width: 40%;
+  }
+  .why .row {
+    margin-top: 30px;
   }
 }
 
@@ -1454,7 +1734,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     height: 1000px;
   }
   .getting-started .mx-auto, .everything .mx-auto {
-    width: 100%;
+    width: 90%;
   }
   .getting-started .mx-auto h1, .everything .mx-auto h1 {
     font-size: 25px;
@@ -1472,7 +1752,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     height: 1000px;
   }
   .getting-started .mx-auto, .everything .mx-auto {
-    width: 100%;
+    width: 90%;
   }
   .getting-started .mx-auto h1, .everything .mx-auto h1 {
     font-size: 25px;
@@ -1616,6 +1896,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .everything {
     height: 800px;
+    padding: 0 30px;
   }
   .everything .tab {
     width: 100%;
@@ -1650,6 +1931,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   .everything {
     height: 800px;
+    padding: 0 50px;
   }
   .everything .tab {
     width: 100%;
@@ -1776,7 +2058,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     height: 380px;
   }
   .who-we-are .text {
-    width: 80%;
+    width: 70%;
     float: right;
     margin-right: 15px;
     padding: 40px 0 100px 0;
@@ -1797,7 +2079,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     height: 380px;
   }
   .who-we-are .text {
-    width: 80%;
+    width: 70%;
     float: right;
     margin-right: 15px;
     padding: 40px 0 100px 0;
@@ -1858,6 +2140,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   }
   .location .row .description {
     height: 350px;
+    padding: 50px 15px;
   }
   .location .row .description h2 {
     font-size: 26px;
@@ -1873,6 +2156,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   }
   .location .row .description {
     height: 350px;
+    padding: 50px 30px;
   }
   .location .row .description h2 {
     font-size: 26px;
@@ -1888,6 +2172,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   }
   .location .row .description {
     height: 350px;
+    padding: 50px 50px;
   }
   .location .row .description h2 {
     font-size: 26px;
@@ -1969,6 +2254,9 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
+  .helpful-tool {
+    padding: 0 30px;
+  }
   .helpful-tool h2 {
     font-size: 25px;
   }
@@ -1990,6 +2278,9 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
+  .helpful-tool {
+    padding: 0 50px;
+  }
   .helpful-tool h2 {
     font-size: 25px;
   }
@@ -2040,6 +2331,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .loanMortages, .rentLoan {
     height: 400px;
+    padding: 0 30px;
   }
   .loanMortages .caption h1, .rentLoan .caption h1 {
     font-size: 30px;
@@ -2051,6 +2343,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   .loanMortages, .rentLoan {
     height: 400px;
+    padding: 0 50px;
   }
   .loanMortages .caption h1, .rentLoan .caption h1 {
     font-size: 30px;
@@ -2165,6 +2458,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .loan-content, .mortgage-content {
     margin-top: 50px;
+    padding: 0 30px;
   }
   .loan-content .top .line, .mortgage-content .top .line {
     display: none;
@@ -2186,6 +2480,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   .loan-content, .mortgage-content {
     margin-top: 50px;
+    padding: 0 50px;
   }
   .loan-content .top .line, .mortgage-content .top .line {
     display: none;
@@ -2364,6 +2659,9 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
+  .rentLoan_content {
+    padding: 0 30px;
+  }
   .rentLoan_content h5 {
     font-size: 13px;
   }
@@ -2378,6 +2676,9 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
+  .rentLoan_content {
+    padding: 0 50px;
+  }
   .rentLoan_content h5 {
     font-size: 13px;
   }
@@ -2596,7 +2897,140 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   background-color: #385E70;
   border-radius: 4px;
 }
-
+@media only screen and (max-width: 320px) {
+  .about_us {
+    margin-top: 30px;
+  }
+  .about_us .tab {
+    width: 100%;
+    height: 250px;
+  }
+  .about_us .tabcontent {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+    padding-bottom: 40px;
+  }
+  .about_us .tabcontent h2 {
+    margin-top: 0;
+  }
+  .about_us .tabcontent h6 {
+    margin-top: 0px;
+  }
+  .about_us .tabcontent .split .objective {
+    width: 100%;
+  }
+  .about_us .tabcontent .split .mobile {
+    margin-top: 20px;
+  }
+  .about_us .tabcontent .head_core {
+    margin-bottom: 0;
+  }
+  .about_us .tabcontent .core_values .value {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .about_us .tabcontent .mob {
+    margin-left: 0;
+  }
+  .about_us .tabcontent .career {
+    height: 240px;
+  }
+  .about_us .tabcontent .career p {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .about_us {
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+  .about_us .tab {
+    width: 100%;
+    height: 250px;
+  }
+  .about_us .tabcontent {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+    padding-bottom: 40px;
+  }
+  .about_us .tabcontent h2 {
+    margin-top: 0;
+  }
+  .about_us .tabcontent h6 {
+    margin-top: 0px;
+  }
+  .about_us .tabcontent .split .objective {
+    width: 100%;
+  }
+  .about_us .tabcontent .split .mobile {
+    margin-top: 20px;
+  }
+  .about_us .tabcontent .head_core {
+    margin-bottom: 0;
+  }
+  .about_us .tabcontent .core_values .value {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .about_us .tabcontent .mob {
+    margin-left: 0;
+  }
+  .about_us .tabcontent .career {
+    height: 240px;
+  }
+  .about_us .tabcontent .career p {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .about_us {
+    margin-top: 30px;
+    padding: 0 50px;
+  }
+  .about_us .tab {
+    width: 100%;
+    height: 250px;
+  }
+  .about_us .tabcontent {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+    padding-bottom: 40px;
+  }
+  .about_us .tabcontent h2 {
+    margin-top: 0;
+  }
+  .about_us .tabcontent h6 {
+    margin-top: 0px;
+  }
+  .about_us .tabcontent .split .objective {
+    width: 100%;
+  }
+  .about_us .tabcontent .split .mobile {
+    margin-top: 20px;
+  }
+  .about_us .tabcontent .head_core {
+    margin-bottom: 0;
+  }
+  .about_us .tabcontent .core_values .value {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .about_us .tabcontent .mob {
+    margin-left: 0;
+  }
+  .about_us .tabcontent .career {
+    height: 240px;
+  }
+  .about_us .tabcontent .career p {
+    padding-top: 0;
+  }
+}
 .cooperate-application {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -2628,7 +3062,38 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 .cooperate-application .row .col-md-4:hover a {
   color: #f7f7f7;
 }
-
+@media only screen and (max-width: 320px) {
+  .cooperate-application {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 190px;
+  }
+  .cooperate-application .row .col-md-4 {
+    border: 1px solid rgba(84, 87, 92, 0.2);
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .cooperate-application {
+    margin-top: 30px;
+    padding: 0 30px;
+    margin-bottom: 0px;
+    height: 190px;
+  }
+  .cooperate-application .row .col-md-4 {
+    border: 1px solid rgba(84, 87, 92, 0.2);
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .cooperate-application {
+    margin-top: 30px;
+    padding: 0 50px;
+    margin-bottom: 0px;
+    height: 190px;
+  }
+  .cooperate-application .row .col-md-4 {
+    border: 1px solid rgba(84, 87, 92, 0.2);
+  }
+}
 .thetoggleTabs {
   margin-bottom: 70px;
   border-bottom: 2px solid rgba(84, 87, 92, 0.3);
@@ -2694,7 +3159,84 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   margin: 60px 0px 70px 25px;
   background-color: #EAAB26;
 }
-
+@media only screen and (max-width: 320px) {
+  .thetoggleTabs p {
+    display: none !important;
+  }
+  .thetoggleTabs .nav li {
+    font-size: 13px;
+    float: left;
+  }
+  .thetoggleTabs .toppy {
+    height: 80px;
+  }
+  .thetoggleTabs .toppy a {
+    padding: 6px 6px;
+  }
+  .thetoggleTabs .tab-pane {
+    padding-top: 0;
+  }
+  .thetoggleTabs .tab-pane .form-group label {
+    font-size: 13px;
+  }
+  .thetoggleTabs .tab-pane button {
+    margin: 30px 0 30px 10px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .thetoggleTabs {
+    padding: 0 30px;
+  }
+  .thetoggleTabs p {
+    display: none !important;
+  }
+  .thetoggleTabs .nav li {
+    font-size: 13px;
+    float: left;
+  }
+  .thetoggleTabs .toppy {
+    height: 80px;
+  }
+  .thetoggleTabs .toppy a {
+    padding: 6px 6px;
+  }
+  .thetoggleTabs .tab-pane {
+    padding-top: 0;
+  }
+  .thetoggleTabs .tab-pane .form-group label {
+    font-size: 13px;
+  }
+  .thetoggleTabs .tab-pane button {
+    margin: 30px 0 30px 10px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .thetoggleTabs {
+    padding: 0 50px;
+  }
+  .thetoggleTabs p {
+    display: none !important;
+  }
+  .thetoggleTabs .nav li {
+    font-size: 13px;
+    float: left;
+  }
+  .thetoggleTabs .toppy {
+    height: 80px;
+  }
+  .thetoggleTabs .toppy a {
+    padding: 6px 6px;
+  }
+  .thetoggleTabs .tab-pane {
+    padding-top: 0;
+  }
+  .thetoggleTabs .tab-pane .form-group label {
+    font-size: 13px;
+  }
+  .thetoggleTabs .tab-pane button {
+    margin: 30px 0 30px 10px;
+  }
+}
 .contact {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -2798,7 +3340,65 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   margin-top: 20px;
   color: #f7f7f7;
 }
-
+@media only screen and (max-width: 320px) {
+  .contact {
+    margin-top: 30px;
+  }
+  .contact .row .col-md-7 .medial {
+    width: 100%;
+  }
+  .contact .row .col-md-7 .chaty {
+    margin-top: 4%;
+  }
+  .contact .row .col-md-4 {
+    height: 400px;
+    margin-top: 25px;
+  }
+  .contact .row .col-md-4 form a button {
+    width: 50%;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .contact {
+    padding: 0 30px;
+    margin-top: 30px;
+  }
+  .contact .row .col-md-7 .medial {
+    width: 100%;
+  }
+  .contact .row .col-md-7 .chaty {
+    margin-top: 4%;
+  }
+  .contact .row .col-md-4 {
+    height: 400px;
+    margin-top: 25px;
+  }
+  .contact .row .col-md-4 form a button {
+    width: 50%;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .contact {
+    padding: 0 50px;
+    margin-top: 30px;
+  }
+  .contact .row .col-md-7 .medial {
+    width: 100%;
+  }
+  .contact .row .col-md-7 .chaty {
+    margin-top: 4%;
+  }
+  .contact .row .col-md-4 {
+    height: 400px;
+    margin-top: 25px;
+  }
+  .contact .row .col-md-4 form a button {
+    width: 50%;
+    height: 40px;
+  }
+}
 .post-footer-contact {
   width: 100%;
   height: 150px;
@@ -2839,7 +3439,21 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 .post-footer-contact .social-media .fa-facebook {
   margin-left: 0;
 }
-
+@media only screen and (max-width: 320px) {
+  .post-footer-contact .social-media {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .post-footer-contact .social-media {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .post-footer-contact .social-media {
+    width: 50%;
+  }
+}
 .medially {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -3072,6 +3686,185 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 .medially .row .col-md-3 li:hover {
   text-decoration: none;
   font-weight: 600;
+}
+@media only screen and (max-width: 320px) {
+  .medially {
+    margin-top: 30px;
+  }
+  .medially .row .col-md-8 h2, .medially .row .rentLoan_content .col-md-3 h2, .rentLoan_content .medially .row .col-md-3 h2 {
+    margin-bottom: 0;
+  }
+  .medially .row .col-md-8 .medial, .medially .row .rentLoan_content .col-md-3 .medial, .rentLoan_content .medially .row .col-md-3 .medial {
+    width: 100%;
+    margin-left: 0;
+    height: 400px;
+    margin-top: 20px;
+  }
+  .medially .row .col-md-8 .medial:first-child, .medially .row .rentLoan_content .col-md-3 .medial:first-child, .rentLoan_content .medially .row .col-md-3 .medial:first-child {
+    margin-top: 0;
+  }
+  .medially .row .col-md-8 .newy, .medially .row .rentLoan_content .col-md-3 .newy, .rentLoan_content .medially .row .col-md-3 .newy, .medially .row .col-md-8 .gallery, .medially .row .rentLoan_content .col-md-3 .gallery, .rentLoan_content .medially .row .col-md-3 .gallery, .medially .row .col-md-8 .video-div, .medially .row .rentLoan_content .col-md-3 .video-div, .rentLoan_content .medially .row .col-md-3 .video-div, .medially .row .col-md-8 .document, .medially .row .rentLoan_content .col-md-3 .document, .rentLoan_content .medially .row .col-md-3 .document {
+    padding-top: 30px;
+  }
+  .medially .row .col-md-8 .newy h2, .medially .row .rentLoan_content .col-md-3 .newy h2, .rentLoan_content .medially .row .col-md-3 .newy h2, .medially .row .col-md-8 .gallery h2, .medially .row .rentLoan_content .col-md-3 .gallery h2, .rentLoan_content .medially .row .col-md-3 .gallery h2, .medially .row .col-md-8 .video-div h2, .medially .row .rentLoan_content .col-md-3 .video-div h2, .rentLoan_content .medially .row .col-md-3 .video-div h2, .medially .row .col-md-8 .document h2, .medially .row .rentLoan_content .col-md-3 .document h2, .rentLoan_content .medially .row .col-md-3 .document h2 {
+    margin-bottom: 20px;
+  }
+  .medially .row .col-md-8 .newy .first, .medially .row .rentLoan_content .col-md-3 .newy .first, .rentLoan_content .medially .row .col-md-3 .newy .first, .medially .row .col-md-8 .gallery .first, .medially .row .rentLoan_content .col-md-3 .gallery .first, .rentLoan_content .medially .row .col-md-3 .gallery .first, .medially .row .col-md-8 .video-div .first, .medially .row .rentLoan_content .col-md-3 .video-div .first, .rentLoan_content .medially .row .col-md-3 .video-div .first, .medially .row .col-md-8 .document .first, .medially .row .rentLoan_content .col-md-3 .document .first, .rentLoan_content .medially .row .col-md-3 .document .first {
+    width: 100%;
+    height: 320px;
+  }
+  .medially .row .col-md-8 .newy .first .pic, .medially .row .rentLoan_content .col-md-3 .newy .first .pic, .rentLoan_content .medially .row .col-md-3 .newy .first .pic, .medially .row .col-md-8 .gallery .first .pic, .medially .row .rentLoan_content .col-md-3 .gallery .first .pic, .rentLoan_content .medially .row .col-md-3 .gallery .first .pic, .medially .row .col-md-8 .video-div .first .pic, .medially .row .rentLoan_content .col-md-3 .video-div .first .pic, .rentLoan_content .medially .row .col-md-3 .video-div .first .pic, .medially .row .col-md-8 .document .first .pic, .medially .row .rentLoan_content .col-md-3 .document .first .pic, .rentLoan_content .medially .row .col-md-3 .document .first .pic {
+    width: 100%;
+  }
+  .medially .row .col-md-8 .newy .first .text, .medially .row .rentLoan_content .col-md-3 .newy .first .text, .rentLoan_content .medially .row .col-md-3 .newy .first .text, .medially .row .col-md-8 .gallery .first .text, .medially .row .rentLoan_content .col-md-3 .gallery .first .text, .rentLoan_content .medially .row .col-md-3 .gallery .first .text, .medially .row .col-md-8 .video-div .first .text, .medially .row .rentLoan_content .col-md-3 .video-div .first .text, .rentLoan_content .medially .row .col-md-3 .video-div .first .text, .medially .row .col-md-8 .document .first .text, .medially .row .rentLoan_content .col-md-3 .document .first .text, .rentLoan_content .medially .row .col-md-3 .document .first .text {
+    width: 100%;
+  }
+  .medially .row .col-md-8 .newy .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date h2, .medially .row .col-md-8 .gallery .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date h2, .medially .row .col-md-8 .video-div .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date h2, .medially .row .col-md-8 .document .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .document .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .document .first .text .date h2 {
+    margin-bottom: 10px;
+  }
+  .medially .row .col-md-8 .newy .first .text .date span, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date span, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date span, .medially .row .col-md-8 .gallery .first .text .date span, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date span, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date span, .medially .row .col-md-8 .video-div .first .text .date span, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date span, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date span, .medially .row .col-md-8 .document .first .text .date span, .medially .row .rentLoan_content .col-md-3 .document .first .text .date span, .rentLoan_content .medially .row .col-md-3 .document .first .text .date span {
+    float: left;
+  }
+  .medially .row .col-md-8 .gallery .imagery, .medially .row .rentLoan_content .col-md-3 .gallery .imagery, .rentLoan_content .medially .row .col-md-3 .gallery .imagery {
+    width: 100%;
+    height: 200px;
+  }
+  .medially .row .col-md-8 .gallery .second-image, .medially .row .rentLoan_content .col-md-3 .gallery .second-image, .rentLoan_content .medially .row .col-md-3 .gallery .second-image {
+    margin-top: 2%;
+  }
+  .medially .row .col-md-8 .video-div .video, .medially .row .rentLoan_content .col-md-3 .video-div .video, .rentLoan_content .medially .row .col-md-3 .video-div .video {
+    height: 380px;
+  }
+  .medially .row .col-md-8 .video-div .video iframe, .medially .row .rentLoan_content .col-md-3 .video-div .video iframe, .rentLoan_content .medially .row .col-md-3 .video-div .video iframe {
+    width: 100% !important;
+    height: 300px;
+  }
+  .medially .row .col-md-8 .document button, .medially .row .rentLoan_content .col-md-3 .document button, .rentLoan_content .medially .row .col-md-3 .document button {
+    width: 30%;
+  }
+  .medially .row .col-md-3 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .medially {
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+  .medially .row .col-md-8 h2, .medially .row .rentLoan_content .col-md-3 h2, .rentLoan_content .medially .row .col-md-3 h2 {
+    margin-bottom: 0;
+  }
+  .medially .row .col-md-8 .medial, .medially .row .rentLoan_content .col-md-3 .medial, .rentLoan_content .medially .row .col-md-3 .medial {
+    width: 100%;
+    margin-left: 0;
+    height: 400px;
+    margin-top: 20px;
+  }
+  .medially .row .col-md-8 .medial:first-child, .medially .row .rentLoan_content .col-md-3 .medial:first-child, .rentLoan_content .medially .row .col-md-3 .medial:first-child {
+    margin-top: 0;
+  }
+  .medially .row .col-md-8 .newy, .medially .row .rentLoan_content .col-md-3 .newy, .rentLoan_content .medially .row .col-md-3 .newy, .medially .row .col-md-8 .gallery, .medially .row .rentLoan_content .col-md-3 .gallery, .rentLoan_content .medially .row .col-md-3 .gallery, .medially .row .col-md-8 .video-div, .medially .row .rentLoan_content .col-md-3 .video-div, .rentLoan_content .medially .row .col-md-3 .video-div, .medially .row .col-md-8 .document, .medially .row .rentLoan_content .col-md-3 .document, .rentLoan_content .medially .row .col-md-3 .document {
+    padding-top: 30px;
+  }
+  .medially .row .col-md-8 .newy h2, .medially .row .rentLoan_content .col-md-3 .newy h2, .rentLoan_content .medially .row .col-md-3 .newy h2, .medially .row .col-md-8 .gallery h2, .medially .row .rentLoan_content .col-md-3 .gallery h2, .rentLoan_content .medially .row .col-md-3 .gallery h2, .medially .row .col-md-8 .video-div h2, .medially .row .rentLoan_content .col-md-3 .video-div h2, .rentLoan_content .medially .row .col-md-3 .video-div h2, .medially .row .col-md-8 .document h2, .medially .row .rentLoan_content .col-md-3 .document h2, .rentLoan_content .medially .row .col-md-3 .document h2 {
+    margin-bottom: 20px;
+  }
+  .medially .row .col-md-8 .newy .first, .medially .row .rentLoan_content .col-md-3 .newy .first, .rentLoan_content .medially .row .col-md-3 .newy .first, .medially .row .col-md-8 .gallery .first, .medially .row .rentLoan_content .col-md-3 .gallery .first, .rentLoan_content .medially .row .col-md-3 .gallery .first, .medially .row .col-md-8 .video-div .first, .medially .row .rentLoan_content .col-md-3 .video-div .first, .rentLoan_content .medially .row .col-md-3 .video-div .first, .medially .row .col-md-8 .document .first, .medially .row .rentLoan_content .col-md-3 .document .first, .rentLoan_content .medially .row .col-md-3 .document .first {
+    width: 100%;
+    height: 320px;
+  }
+  .medially .row .col-md-8 .newy .first .pic, .medially .row .rentLoan_content .col-md-3 .newy .first .pic, .rentLoan_content .medially .row .col-md-3 .newy .first .pic, .medially .row .col-md-8 .gallery .first .pic, .medially .row .rentLoan_content .col-md-3 .gallery .first .pic, .rentLoan_content .medially .row .col-md-3 .gallery .first .pic, .medially .row .col-md-8 .video-div .first .pic, .medially .row .rentLoan_content .col-md-3 .video-div .first .pic, .rentLoan_content .medially .row .col-md-3 .video-div .first .pic, .medially .row .col-md-8 .document .first .pic, .medially .row .rentLoan_content .col-md-3 .document .first .pic, .rentLoan_content .medially .row .col-md-3 .document .first .pic {
+    width: 100%;
+  }
+  .medially .row .col-md-8 .newy .first .text, .medially .row .rentLoan_content .col-md-3 .newy .first .text, .rentLoan_content .medially .row .col-md-3 .newy .first .text, .medially .row .col-md-8 .gallery .first .text, .medially .row .rentLoan_content .col-md-3 .gallery .first .text, .rentLoan_content .medially .row .col-md-3 .gallery .first .text, .medially .row .col-md-8 .video-div .first .text, .medially .row .rentLoan_content .col-md-3 .video-div .first .text, .rentLoan_content .medially .row .col-md-3 .video-div .first .text, .medially .row .col-md-8 .document .first .text, .medially .row .rentLoan_content .col-md-3 .document .first .text, .rentLoan_content .medially .row .col-md-3 .document .first .text {
+    width: 100%;
+  }
+  .medially .row .col-md-8 .newy .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date h2, .medially .row .col-md-8 .gallery .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date h2, .medially .row .col-md-8 .video-div .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date h2, .medially .row .col-md-8 .document .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .document .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .document .first .text .date h2 {
+    margin-bottom: 10px;
+  }
+  .medially .row .col-md-8 .newy .first .text .date span, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date span, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date span, .medially .row .col-md-8 .gallery .first .text .date span, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date span, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date span, .medially .row .col-md-8 .video-div .first .text .date span, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date span, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date span, .medially .row .col-md-8 .document .first .text .date span, .medially .row .rentLoan_content .col-md-3 .document .first .text .date span, .rentLoan_content .medially .row .col-md-3 .document .first .text .date span {
+    float: left;
+  }
+  .medially .row .col-md-8 .gallery .imagery, .medially .row .rentLoan_content .col-md-3 .gallery .imagery, .rentLoan_content .medially .row .col-md-3 .gallery .imagery {
+    width: 100%;
+    height: 200px;
+  }
+  .medially .row .col-md-8 .gallery .second-image, .medially .row .rentLoan_content .col-md-3 .gallery .second-image, .rentLoan_content .medially .row .col-md-3 .gallery .second-image {
+    margin-top: 2%;
+  }
+  .medially .row .col-md-8 .video-div .video, .medially .row .rentLoan_content .col-md-3 .video-div .video, .rentLoan_content .medially .row .col-md-3 .video-div .video {
+    height: 380px;
+  }
+  .medially .row .col-md-8 .video-div .video iframe, .medially .row .rentLoan_content .col-md-3 .video-div .video iframe, .rentLoan_content .medially .row .col-md-3 .video-div .video iframe {
+    width: 100% !important;
+    height: 300px;
+  }
+  .medially .row .col-md-8 .document button, .medially .row .rentLoan_content .col-md-3 .document button, .rentLoan_content .medially .row .col-md-3 .document button {
+    width: 30%;
+  }
+  .medially .row .col-md-3 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .medially {
+    margin-top: 30px;
+    padding: 0 50px;
+  }
+  .medially .row .col-md-8 h2, .medially .row .rentLoan_content .col-md-3 h2, .rentLoan_content .medially .row .col-md-3 h2 {
+    margin-bottom: 0;
+  }
+  .medially .row .col-md-8 .medial, .medially .row .rentLoan_content .col-md-3 .medial, .rentLoan_content .medially .row .col-md-3 .medial {
+    width: 100%;
+    margin-left: 0;
+    height: 400px;
+    margin-top: 20px;
+  }
+  .medially .row .col-md-8 .medial:first-child, .medially .row .rentLoan_content .col-md-3 .medial:first-child, .rentLoan_content .medially .row .col-md-3 .medial:first-child {
+    margin-top: 0;
+  }
+  .medially .row .col-md-8 .newy, .medially .row .rentLoan_content .col-md-3 .newy, .rentLoan_content .medially .row .col-md-3 .newy, .medially .row .col-md-8 .gallery, .medially .row .rentLoan_content .col-md-3 .gallery, .rentLoan_content .medially .row .col-md-3 .gallery, .medially .row .col-md-8 .video-div, .medially .row .rentLoan_content .col-md-3 .video-div, .rentLoan_content .medially .row .col-md-3 .video-div, .medially .row .col-md-8 .document, .medially .row .rentLoan_content .col-md-3 .document, .rentLoan_content .medially .row .col-md-3 .document {
+    padding-top: 30px;
+  }
+  .medially .row .col-md-8 .newy h2, .medially .row .rentLoan_content .col-md-3 .newy h2, .rentLoan_content .medially .row .col-md-3 .newy h2, .medially .row .col-md-8 .gallery h2, .medially .row .rentLoan_content .col-md-3 .gallery h2, .rentLoan_content .medially .row .col-md-3 .gallery h2, .medially .row .col-md-8 .video-div h2, .medially .row .rentLoan_content .col-md-3 .video-div h2, .rentLoan_content .medially .row .col-md-3 .video-div h2, .medially .row .col-md-8 .document h2, .medially .row .rentLoan_content .col-md-3 .document h2, .rentLoan_content .medially .row .col-md-3 .document h2 {
+    margin-bottom: 20px;
+  }
+  .medially .row .col-md-8 .newy .first, .medially .row .rentLoan_content .col-md-3 .newy .first, .rentLoan_content .medially .row .col-md-3 .newy .first, .medially .row .col-md-8 .gallery .first, .medially .row .rentLoan_content .col-md-3 .gallery .first, .rentLoan_content .medially .row .col-md-3 .gallery .first, .medially .row .col-md-8 .video-div .first, .medially .row .rentLoan_content .col-md-3 .video-div .first, .rentLoan_content .medially .row .col-md-3 .video-div .first, .medially .row .col-md-8 .document .first, .medially .row .rentLoan_content .col-md-3 .document .first, .rentLoan_content .medially .row .col-md-3 .document .first {
+    width: 100%;
+    height: 320px;
+  }
+  .medially .row .col-md-8 .newy .first .pic, .medially .row .rentLoan_content .col-md-3 .newy .first .pic, .rentLoan_content .medially .row .col-md-3 .newy .first .pic, .medially .row .col-md-8 .gallery .first .pic, .medially .row .rentLoan_content .col-md-3 .gallery .first .pic, .rentLoan_content .medially .row .col-md-3 .gallery .first .pic, .medially .row .col-md-8 .video-div .first .pic, .medially .row .rentLoan_content .col-md-3 .video-div .first .pic, .rentLoan_content .medially .row .col-md-3 .video-div .first .pic, .medially .row .col-md-8 .document .first .pic, .medially .row .rentLoan_content .col-md-3 .document .first .pic, .rentLoan_content .medially .row .col-md-3 .document .first .pic {
+    width: 100%;
+  }
+  .medially .row .col-md-8 .newy .first .text, .medially .row .rentLoan_content .col-md-3 .newy .first .text, .rentLoan_content .medially .row .col-md-3 .newy .first .text, .medially .row .col-md-8 .gallery .first .text, .medially .row .rentLoan_content .col-md-3 .gallery .first .text, .rentLoan_content .medially .row .col-md-3 .gallery .first .text, .medially .row .col-md-8 .video-div .first .text, .medially .row .rentLoan_content .col-md-3 .video-div .first .text, .rentLoan_content .medially .row .col-md-3 .video-div .first .text, .medially .row .col-md-8 .document .first .text, .medially .row .rentLoan_content .col-md-3 .document .first .text, .rentLoan_content .medially .row .col-md-3 .document .first .text {
+    width: 100%;
+  }
+  .medially .row .col-md-8 .newy .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date h2, .medially .row .col-md-8 .gallery .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date h2, .medially .row .col-md-8 .video-div .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date h2, .medially .row .col-md-8 .document .first .text .date h2, .medially .row .rentLoan_content .col-md-3 .document .first .text .date h2, .rentLoan_content .medially .row .col-md-3 .document .first .text .date h2 {
+    margin-bottom: 10px;
+  }
+  .medially .row .col-md-8 .newy .first .text .date span, .medially .row .rentLoan_content .col-md-3 .newy .first .text .date span, .rentLoan_content .medially .row .col-md-3 .newy .first .text .date span, .medially .row .col-md-8 .gallery .first .text .date span, .medially .row .rentLoan_content .col-md-3 .gallery .first .text .date span, .rentLoan_content .medially .row .col-md-3 .gallery .first .text .date span, .medially .row .col-md-8 .video-div .first .text .date span, .medially .row .rentLoan_content .col-md-3 .video-div .first .text .date span, .rentLoan_content .medially .row .col-md-3 .video-div .first .text .date span, .medially .row .col-md-8 .document .first .text .date span, .medially .row .rentLoan_content .col-md-3 .document .first .text .date span, .rentLoan_content .medially .row .col-md-3 .document .first .text .date span {
+    float: left;
+  }
+  .medially .row .col-md-8 .gallery .imagery, .medially .row .rentLoan_content .col-md-3 .gallery .imagery, .rentLoan_content .medially .row .col-md-3 .gallery .imagery {
+    width: 100%;
+    height: 200px;
+  }
+  .medially .row .col-md-8 .gallery .second-image, .medially .row .rentLoan_content .col-md-3 .gallery .second-image, .rentLoan_content .medially .row .col-md-3 .gallery .second-image {
+    margin-top: 2%;
+  }
+  .medially .row .col-md-8 .video-div .video, .medially .row .rentLoan_content .col-md-3 .video-div .video, .rentLoan_content .medially .row .col-md-3 .video-div .video {
+    height: 380px;
+  }
+  .medially .row .col-md-8 .video-div .video iframe, .medially .row .rentLoan_content .col-md-3 .video-div .video iframe, .rentLoan_content .medially .row .col-md-3 .video-div .video iframe {
+    width: 100% !important;
+    height: 300px;
+  }
+  .medially .row .col-md-8 .document button, .medially .row .rentLoan_content .col-md-3 .document button, .rentLoan_content .medially .row .col-md-3 .document button {
+    width: 30%;
+  }
+  .medially .row .col-md-3 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
