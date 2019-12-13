@@ -31,6 +31,8 @@
   }
   100% {
     transform: scale(0.4);
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes tada {
@@ -752,14 +754,14 @@ button[type=submit]:focus {
   color: #000;
   padding: 15px 10px;
   cursor: pointer;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ececec;
   transition: 0.2s ease-in;
 }
 .modal-content .panel-group .panel-heading a {
   color: #000;
 }
 .modal-content .panel-group .panel-heading a h4 {
-  font-size: 17px;
+  font-size: 15px;
   margin: 0;
   font-weight: 500;
 }
@@ -797,18 +799,17 @@ button[type=submit]:focus {
 .modal-content h2 {
   color: #54575C;
   font-weight: 700;
+  font-size: 16px;
   margin-top: 14px;
   margin-left: 15px;
 }
 .modal-content .quick {
   padding-left: 15px;
 }
-.modal-content .quick h2 {
-  font-size: 14px;
-}
 .modal-content .quick li {
   list-style: none;
   margin-top: 10px;
+  font-size: 15px;
 }
 .modal-content .quick li a {
   color: #385E70;
@@ -951,6 +952,7 @@ section header .logo .main, .loanMortages header .logo .main, .rentLoan header .
   }
   100% {
     transform: scale(0.4);
+    opacity: 0;
   }
 }
 @keyframes tada {
@@ -1457,17 +1459,17 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 }
 @media only screen and (max-width: 320px) {
   section, .loanMortages, .rentLoan {
-    height: 420px;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   section, .loanMortages, .rentLoan {
-    height: 400px;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   section, .loanMortages, .rentLoan {
-    height: 400px;
+    height: 100%;
   }
 }
 
@@ -1923,21 +1925,30 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   .everything {
     height: 800px;
   }
+  .everything .mx-auto {
+    margin: 30px 0;
+    padding-top: 0;
+  }
   .everything .tab {
     width: 100%;
-    height: 90px;
+    height: 200px;
   }
   .everything .tab button {
-    width: 19%;
+    width: 49%;
     float: left;
     margin-top: 0;
     padding: 5px;
+    text-align: center;
     height: 60px;
     margin-right: 1%;
-    font-size: 13px;
+    font-size: 15px;
   }
   .everything .tab button span {
     display: none;
+  }
+  .everything .tab button:nth-child(3) {
+    width: 100%;
+    margin: 4px 0;
   }
   .everything .tabcontent {
     width: 100%;
@@ -1958,21 +1969,30 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     height: 800px;
     padding: 0 30px;
   }
+  .everything .mx-auto {
+    margin: 30px 0;
+    padding-top: 0;
+  }
   .everything .tab {
     width: 100%;
-    height: 90px;
+    height: 200px;
   }
   .everything .tab button {
-    width: 19%;
+    width: 49%;
     float: left;
     margin-top: 0;
     padding: 5px;
+    text-align: center;
     height: 60px;
     margin-right: 1%;
-    font-size: 13px;
+    font-size: 15px;
   }
   .everything .tab button span {
     display: none;
+  }
+  .everything .tab button:nth-child(3) {
+    width: 100%;
+    margin: 4px 0;
   }
   .everything .tabcontent {
     width: 100%;
@@ -1993,21 +2013,30 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
     height: 800px;
     padding: 0 50px;
   }
+  .everything .mx-auto {
+    margin: 30px 0;
+    padding-top: 0;
+  }
   .everything .tab {
     width: 100%;
-    height: 90px;
+    height: 200px;
   }
   .everything .tab button {
-    width: 19%;
+    width: 49%;
     float: left;
     margin-top: 0;
     padding: 5px;
+    text-align: center;
     height: 60px;
     margin-right: 1%;
-    font-size: 13px;
+    font-size: 15px;
   }
   .everything .tab button span {
     display: none;
+  }
+  .everything .tab button:nth-child(3) {
+    width: 100%;
+    margin: 4px 0;
   }
   .everything .tabcontent {
     width: 100%;
