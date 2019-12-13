@@ -699,7 +699,7 @@ section{
 
         @media only screen and (min-width:321px) and (max-width:540px){
             padding-top:70px;
-            padding:0 30px;
+            padding:40px 30px;
             .caption_text{
                 width:95%;
                 //padding-left:20px;
@@ -713,7 +713,7 @@ section{
         }
         @media only screen and (min-width:541px) and (max-width:720px){
             padding-top:70px;
-            padding:0 50px;
+            padding:40px 50px;
             .caption_text{
                 width:95%;
                 //padding-left:20px;
@@ -1782,8 +1782,8 @@ section{
 
     @media only screen and (min-width:321px) and (max-width:540px){
         height:400px;
-        padding:0 30px;
         .caption{
+            padding:40px 30px;
             h1{
                 font-size:30px;
             }
@@ -1794,8 +1794,9 @@ section{
     }
     @media only screen and (min-width:541px) and (max-width:720px){
         height:400px;
-        padding:0 50px;
+        
         .caption{
+            padding:40px 50px 0 50px;;
             h1{
                 font-size:30px;
             }

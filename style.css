@@ -164,7 +164,7 @@
   .header {
     background-color: #f7f7f7;
     height: 80px;
-    padding-top: 5px;
+    padding: 5px 30px 0 30px;
   }
   .header header {
     padding: 0 30px;
@@ -193,7 +193,7 @@
   .header {
     background-color: #f7f7f7;
     height: 80px;
-    padding-top: 5px;
+    padding: 5px 50px 0 50px;
   }
   .header header {
     padding: 0 30px;
@@ -1366,7 +1366,7 @@ section .caption button span:nth-child(4), .loanMortages .caption button span:nt
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   section .caption, .loanMortages .caption, .rentLoan .caption {
     padding-top: 70px;
-    padding: 0 30px;
+    padding: 40px 30px;
   }
   section .caption .caption_text, .loanMortages .caption .caption_text, .rentLoan .caption .caption_text {
     width: 95%;
@@ -1381,7 +1381,7 @@ section .caption button span:nth-child(4), .loanMortages .caption button span:nt
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   section .caption, .loanMortages .caption, .rentLoan .caption {
     padding-top: 70px;
-    padding: 0 50px;
+    padding: 40px 50px;
   }
   section .caption .caption_text, .loanMortages .caption .caption_text, .rentLoan .caption .caption_text {
     width: 95%;
@@ -2391,7 +2391,9 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .loanMortages, .rentLoan {
     height: 400px;
-    padding: 0 30px;
+  }
+  .loanMortages .caption, .rentLoan .caption {
+    padding: 40px 30px;
   }
   .loanMortages .caption h1, .rentLoan .caption h1 {
     font-size: 30px;
@@ -2403,7 +2405,9 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   .loanMortages, .rentLoan {
     height: 400px;
-    padding: 0 50px;
+  }
+  .loanMortages .caption, .rentLoan .caption {
+    padding: 40px 50px 0 50px;
   }
   .loanMortages .caption h1, .rentLoan .caption h1 {
     font-size: 30px;
