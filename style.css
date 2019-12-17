@@ -485,6 +485,11 @@
     height: 70px !important;
   }
 }
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .post-footer {
+    height: 70px !important;
+  }
+}
 *,
 *:after,
 *:before {
