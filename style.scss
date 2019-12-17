@@ -9,11 +9,12 @@
 // }
 
 .modal-content{
-    width:100%;
+    width:90%;
     height:100%;
     position: fixed;
     overflow: scroll;
     top:0;
+    right:0;
     background-color:#fff;
     bottom:0;
     z-index:9999;
@@ -133,6 +134,7 @@
         font-size: 14px;
     }
     .modal-content{
+        z-index:99999;
         .picture{
             width:150px;
             height: 150px;
@@ -649,7 +651,6 @@ section{
             transition: 0.5s;
         }
         button span{
-            
             position: absolute;
             width: 25%;
             height: 100%;
@@ -687,6 +688,7 @@ section{
             padding-top:70px;
             .caption_text{
                 width:95%;
+                margin-top:60px;
                 //padding-left:20px;
             }
             h1{
@@ -702,6 +704,7 @@ section{
             padding:40px 30px;
             .caption_text{
                 width:95%;
+                margin-top:90px;
                 //padding-left:20px;
             }
             h1{
@@ -716,6 +719,7 @@ section{
             padding:40px 50px;
             .caption_text{
                 width:95%;
+                margin-top:150px;
                 //padding-left:20px;
             }
             h1{
@@ -860,7 +864,7 @@ section{
             height:40px;
             background-color: $theme-white;
             border:1px solid rgba($theme-grey, 0.1);
-            width:400px;
+            width:100%;
             text-align: center;
             margin-left: 15px;
         }
@@ -869,60 +873,69 @@ section{
             color:#34657F;
             font-weight:500;
         }
+        .col-md-2{
+            p{
+                margin-top: 10px;
+            }
+        }
         p{
             margin-top: 30px;
-        button{
-            width:100px;
-            height:32px;
-            color:$theme-white;
-            margin-left: 20px;
-            border:none;
-            border-radius:7px;
-            background-color: $theme-blue;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            transition: 0.5s;
         }
-        button span{
-            
-            position: absolute;
-            width: 25%;
-            height: 100%;
-            background-color:$theme-white;
-            transform: translateY(150%);
-            border-radius: 50%;
-            left: calc((var(--n) - 1) * 25%);
-            transition: 0.5s;
-            transition-delay: calc((var(--n) - 1) * 0.1s);
-            z-index: -1;
-        }
-        button:hover {
-            color: $theme-blue;
-            box-shadow: 0px 3px 10px rgba($theme-blue,0.7);
-        }
+        .col-md-3{
+            button{
+                width:100px;
+                height:32px;
+                color:$theme-white;
+                margin-left: 20px;
+                border:none;
+                border-radius:7px;
+                background-color: $theme-blue;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                transition: 0.5s;
+            }
+            button span{
+                
+                position: absolute;
+                width: 25%;
+                height: 100%;
+                background-color:$theme-white;
+                transform: translateY(150%);
+                border-radius: 50%;
+                left: calc((var(--n) - 1) * 25%);
+                transition: 0.5s;
+                transition-delay: calc((var(--n) - 1) * 0.1s);
+                z-index: -1;
+            }
+            button:hover {
+                color: $theme-blue;
+                box-shadow: 0px 3px 10px rgba($theme-blue,0.7);
+            }
 
-        button:hover span {
-            transform: translateY(0) scale(2);
-        }
-                button span:nth-child(1) {
-            --n: 1;
-        }
+            button:hover span {
+                transform: translateY(0) scale(2);
+            }
+                    button span:nth-child(1) {
+                --n: 1;
+            }
 
-        button span:nth-child(2) {
-            --n: 2;
-        }
+            button span:nth-child(2) {
+                --n: 2;
+            }
 
-        button span:nth-child(3) {
-            --n: 3;
-        }
+            button span:nth-child(3) {
+                --n: 3;
+            }
 
-        button span:nth-child(4) {
-            --n: 4;
-        }  
-        } 
+            button span:nth-child(4) {
+                --n: 4;
+            }  
+        }
+        
+         
     }
-    .row{
+    .pro{
         //padding: 0 100px;
         margin-top:70px;
         background-image: url(images/Accounting.svg);
@@ -1012,12 +1025,19 @@ section{
                 //text-align: left;
             }
             input{
-                width:25%;
+                width:90%;
+                margin-left:0;
+            }
+            .col-md-3{
+                margin-top:15px;
             }
            
         }
         .row{
-            margin-top:30px;
+            margin-top:20px;
+        }
+        .pro{
+            margin-top:40px;
         }
     }
 
@@ -1034,7 +1054,11 @@ section{
                 margin-top:0;
             }
             input{
-                width:40%;
+                width:90%;
+                margin-left:0;
+            }
+            .col-md-3{
+                margin-top:15px;
             }
         }
         .row{
@@ -1054,11 +1078,15 @@ section{
                 margin-top:0;
             }
             input{
-                width:40%;
+                width:90%;
+                margin-left:0;
+            }
+            .col-md-3{
+                margin-top:15px;
             }
         }
         .row{
-            margin-top:30px;
+            margin-top:20px;
         }
     }
 }
