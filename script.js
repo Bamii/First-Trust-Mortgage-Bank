@@ -11,6 +11,11 @@ $(".fa-times").click(function(){
     $(".modal-content").slideUp();
 })
 
+$(".expgroup").hide();
+  $(".share").click(function(){
+    $(".expgroup").animate({height:'toggle'});
+  });
+
       $(window).scroll(function(){
             if ($(window).scrollTop() >= 120) {
                 $('.header').addClass('sticky');

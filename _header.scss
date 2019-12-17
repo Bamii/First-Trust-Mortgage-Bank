@@ -243,6 +243,11 @@
         left:0;
         z-index: 9999;
         //display: block;
+        background-image:url(images/FirstTrust%20Icon.svg);
+        background-blend-mode: overlay;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position:center;
         background-color: #f7f7f7;
         .container{  
            border-top:1px solid rgba($theme-grey,0.4);
