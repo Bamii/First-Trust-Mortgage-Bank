@@ -8,7 +8,7 @@
 //     padding: 0;
 // }
 
-.modal-content{
+.modal_content{
     width:90%;
     height:100%;
     position: fixed;
@@ -23,12 +23,21 @@
         height:60px;
         width:100%;
         border-bottom:1px solid #e0e0e0 ;
-        padding-top:10px;
+        padding-top:20px;
         padding-right: 20px;;
-        i{
+        .fa-times{
             float:right;
             color:$theme-grey;
             font-size:18px;
+        }
+        a{
+            float:left;
+            color:$theme-grey;
+            i{
+                color:$theme-blue;
+                font-size:14px;
+                margin: 0 10px;
+            }
         }
     }
     .panel-group{
@@ -145,6 +154,11 @@
         }
         .modal-header{
             text-align: center;
+        }
+        .submit{
+            background-color:$theme-orange;
+            color:#fff;
+
         }
     }
 }

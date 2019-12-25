@@ -4,11 +4,11 @@
   });
 
   $(".fa-bars").click(function(){
-    $(".modal-content").show();
+    $(".modal_content").show();
 })
 
 $(".fa-times").click(function(){
-    $(".modal-content").slideUp();
+    $(".modal_content").slideUp();
 })
 
 $(".expgroup").hide();

@@ -733,7 +733,7 @@ button[type=submit]:focus {
   border-radius: 100%;
 }
 
-.modal-content {
+.modal_content {
   width: 90%;
   height: 100%;
   position: fixed;
@@ -745,22 +745,31 @@ button[type=submit]:focus {
   z-index: 9999;
   display: none;
 }
-.modal-content .head {
+.modal_content .head {
   height: 60px;
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-right: 20px;
 }
-.modal-content .head i {
+.modal_content .head .fa-times {
   float: right;
   color: #54575C;
   font-size: 18px;
 }
-.modal-content .panel-group {
+.modal_content .head a {
+  float: left;
+  color: #54575C;
+}
+.modal_content .head a i {
+  color: #385E70;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.modal_content .panel-group {
   width: 100%;
 }
-.modal-content .panel-group .panel-heading {
+.modal_content .panel-group .panel-heading {
   background-color: #fff;
   color: #000;
   padding: 15px 10px;
@@ -768,61 +777,61 @@ button[type=submit]:focus {
   border-bottom: 1px solid #ececec;
   transition: 0.2s ease-in;
 }
-.modal-content .panel-group .panel-heading a {
+.modal_content .panel-group .panel-heading a {
   color: #000;
 }
-.modal-content .panel-group .panel-heading a h4 {
+.modal_content .panel-group .panel-heading a h4 {
   font-size: 15px;
   margin: 0;
   font-weight: 500;
 }
-.modal-content .panel-group .panel-heading i {
+.modal_content .panel-group .panel-heading i {
   float: right;
   color: #385E70;
   cursor: pointer;
 }
-.modal-content .panel-group .panel-heading a:hover {
+.modal_content .panel-group .panel-heading a:hover {
   text-decoration: none;
 }
-.modal-content .panel-group .panel-collapse {
+.modal_content .panel-group .panel-collapse {
   font-size: 13px;
   padding: 10px;
   background-color: #f7f7f7;
 }
-.modal-content .panel-group .panel-collapse p {
+.modal_content .panel-group .panel-collapse p {
   font-weight: 700;
   margin-bottom: 5px;
   margin-top: 20px;
   font-size: 13px;
 }
-.modal-content .panel-group .panel-collapse li {
+.modal_content .panel-group .panel-collapse li {
   list-style: none;
 }
-.modal-content .panel-group .panel-collapse li a {
+.modal_content .panel-group .panel-collapse li a {
   color: #385E70;
 }
-.modal-content .panel-group .panel-collapse li a:hover {
+.modal_content .panel-group .panel-collapse li a:hover {
   text-decoration: none;
 }
-.modal-content .panel-group .panel-collapse li:hover {
+.modal_content .panel-group .panel-collapse li:hover {
   font-weight: 700;
 }
-.modal-content h2 {
+.modal_content h2 {
   color: #54575C;
   font-weight: 700;
   font-size: 16px;
   margin-top: 14px;
   margin-left: 15px;
 }
-.modal-content .quick {
+.modal_content .quick {
   padding-left: 15px;
 }
-.modal-content .quick li {
+.modal_content .quick li {
   list-style: none;
   margin-top: 10px;
   font-size: 15px;
 }
-.modal-content .quick li a {
+.modal_content .quick li a {
   color: #385E70;
 }
 
@@ -862,6 +871,10 @@ button[type=submit]:focus {
 }
 .modal .modal-content .modal-header {
   text-align: center;
+}
+.modal .modal-content .submit {
+  background-color: #EAAB26;
+  color: #fff;
 }
 
 .fixed-header {

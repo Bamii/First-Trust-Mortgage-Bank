@@ -24,9 +24,52 @@
    
 </head>
 <body>
-
-        <div class="modal-content animated slideInRight">
+    <div class="modal fade bd-example-modal-lg" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    arial-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Quick Application Form</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-name"> Full Name</label>
+            <input type="text" id="orangeForm-name" class="form-control validate">
+          </div>
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+              <label data-error="wrong" data-success="right" for="orangeForm-email">Email Address</label>
+            <input type="email" id="orangeForm-email" class="form-control validate">
+    
+          </div>
+    
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+              <label data-error="wrong" data-success="right" for="orangeForm-number">BVN</label>
+            <input type="number" id="orangeForm-number" class="form-control validate">
+          </div>
+    
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Phone Number</label>
+            <input type="number" id="orangeForm-pass" class="form-control validate">
+            
+          </div>
+    
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn submit btn-deep-orange">Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+        <div class="modal_content animated slideInRight">
                 <div class="head">
+                    <a href="internetbanking.html"><i class="material-icons lock">lock</i>Internet Banking</a>
                         <i class="fas fa-times"></i>
                 </div>
                 <div class="panel-group" id="accordion">
@@ -395,7 +438,7 @@
                   <p>Eligible for 50% facility on achievement of 50% target savings</p>
                   
                   
-                  <button>Apply Now <span></span><span></span><span></span><span></span></button>
+                  <button data-toggle="modal" data-target="#modalRegisterForm">Apply Now <span></span><span></span><span></span><span></span></button>
                   <p class="not"><a href="savingAndInvestment.html">Not for you? Check other products</a></p>
                   
                   
@@ -468,7 +511,7 @@
                         <h3>Home Plan</h3>
                         <p>This is a monthly savings plan with a concessionary interest rate. Withdrawal is not expected to be more than once in a quarter.</p>
                     </div>
-                    <button>Apply Now <span></span><span></span><span></span><span></span></button><p class="read"><a href="homePlan.html">Read More</a></p>
+                    <button data-toggle="modal" data-target="#modalRegisterForm">Apply Now <span></span><span></span><span></span><span></span></button><p class="read"><a href="homePlan.html">Read More</a></p>
                 </div>
             </div>
         </div>
