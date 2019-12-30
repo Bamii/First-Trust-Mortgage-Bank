@@ -24,7 +24,208 @@
    
 </head>
 <body>
-
+    <div class="modal fade" id="myModaCalculator">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">  
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="sec-calculator bg-blue-fade py-3 py-md-5">
+                    <div class="container my-4" >
+                        <div class="col-lg-12 col-md-10 text-left" >
+                            <h2 class="mb-4 section-title cl-blue">Loan Calculator</h2>
+                            <p class="">Whether you are interested in Home ownership loan, Equity release loan, NHF, mortgage refinancing, or short-term loan; nothing beats being prepared. Our loan calculator will help you analyse the numbers involved in making your dream happen at the best rates.</p>
+                        </div>
+                        <div class="row justify-content-left">
+                            <div class="col-md-6">
+                                <div class="card border-0 mt-3 drop-shadow drop-shadow-xs">
+                                    <div class="card-body px-lg-5 py-lg-4">
+                                        <div class="row">
+                                            <div class="form-group dropdown col-12 d-flex">
+                                                <div class="col-12 col-md-10 mx-md-auto">
+                                                    <button class="btn btn-yellow btn-sm dropdown-toggle w-100 py-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  type="button" >
+                                                        Loan Type
+                                                        <i class="mr-2 fas fa-angle-down"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu nav" id="nav-tab" role="tablist" aria-labelledby="dropdownMenuButton" style="right: 30px">
+                                                        <a class="dropdown-item" id="calc-one-tab" data-toggle="tab" href="#loan-calc-one" role="tab" aria-controls="loan-calc-one" aria-selected="true">Outright Purchase</a>
+                                                        <a class="dropdown-item" id="calc-two-tab" data-toggle="tab" href="#loan-calc-two" role="tab" aria-controls="loan-calc-one" aria-selected="false">Construction Finance</a>
+                                                        <a class="dropdown-item" id="calc-three-tab" data-toggle="tab" href="#loan-calc-three" role="tab" aria-controls="loan-calc-three" aria-selected="false">Equity Release</a>
+                                                        <a class="dropdown-item" id="calc-four-tab" data-toggle="tab" href="#loan-calc-four" role="tab" aria-controls="loan-calc-four" aria-selected="false">NHF Loan</a>
+                                                        <a class="dropdown-item" id="calc-five-tab" data-toggle="tab" href="#loan-calc-five" role="tab" aria-controls="loan-calc-five" aria-selected="false">Mortgage Refinancing</a>
+                                                        <a class="dropdown-item" id="calc-six-tab" data-toggle="tab" href="#loan-calc-six" role="tab" aria-controls="loan-calc-six" aria-selected="false">Short Term Loan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="loan-calc-one" role="tabpanel" aria-labelledby="calc-one-tab">
+                                                    <div class="col-lg row">
+                                                        <div class="col-md-6">
+                                                            <p class="text-muted mt-2 mb-0"><small>Outright Purchase:</small></p>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="loan_amount" class="form-control b-line" placeholder="&#8358; Loan Amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg row">
+                                                        <div class="form-group col-md-6">
+                                                            <input type="text" id="interest" value="24%" class="form-control b-line" placeholder="% interest Rate" disabled>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="term" class="form-control b-line" placeholder="(Yrs) Term" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tab-pane fade" id="loan-calc-two" role="tabpanel" aria-labelledby="calc-two-tab">
+                                                    <div class="col-lg row">
+                                                        <div class="col-md-6">
+                                                            <p class="text-muted mt-2 mb-0"><small>Construction Finance:</small></p>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="loan_amount" class="form-control b-line" placeholder="&#8358; Loan Amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg row">
+                                                        <div class="form-group col-md-6">
+                                                            <input type="text" id="interest" value="24%" class="form-control b-line" placeholder="% interest Rate" disabled>
+                                                        </div>    
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="term" class="form-control b-line" placeholder="(Yrs) Term" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tab-pane fade" id="loan-calc-three" role="tabpanel" aria-labelledby="calc-three-tab">
+                                                    <div class="col-lg row">
+                                                        <div class="col-md-6">
+                                                            <p class="text-muted mt-2 mb-0"><small>Equity Release:</small></p>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="loan_amount" class="form-control b-line" placeholder="&#8358; Loan Amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg row">
+                                                        <div class="form-group col-md-6">
+                                                            <input type="text" id="interest" value="25%" class="form-control b-line" placeholder="% interest Rate" disabled>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="term" class="form-control b-line" placeholder="(Yrs) Term" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tab-pane fade" id="loan-calc-four" role="tabpanel" aria-labelledby="calc-four-tab">
+                                                    <div class="col-lg row">
+                                                        <div class="col-md-6">
+                                                            <p class="text-muted mt-2 mb-0"><small>NHF Loan:</small></p>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="loan_amount" class="form-control b-line" placeholder="&#8358; Loan Amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg row">
+                                                        <div class="form-group col-md-6">
+                                                            <input type="text" id="interest" value="6%" class="form-control b-line" placeholder="% interest Rate" disabled>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="term" class="form-control b-line" placeholder="(Yrs) Term" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tab-pane fade" id="loan-calc-five" role="tabpanel" aria-labelledby="calc-five-tab">
+                                                    <div class="col-lg row">
+                                                        <div class="col-md-6">
+                                                            <p class="text-muted mt-2 mb-0"><small>Mortgage Refinancing:</small></p>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="loan_amount" class="form-control b-line" placeholder="&#8358; Loan Amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg row">
+                                                        <div class="form-group col-md-6">
+                                                            <input type="text" id="interest" value="24%" class="form-control b-line" placeholder="% interest Rate" disabled>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="term" class="form-control b-line" placeholder="(Yrs) Term" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tab-pane fade" id="loan-calc-six" role="tabpanel" aria-labelledby="calc-six-tab">
+                                                    <div class="col-lg row">
+                                                        <div class="col-md-6">
+                                                            <p class="text-muted mt-2 mb-0"><small>Short Term Loan:</small></p>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="loan_amount" class="form-control b-line" placeholder="&#8358; Loan Amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg row">
+                                                        <div class="form-group col-md-6">
+                                                            <input type="text" id="interest" value="28%" class="form-control b-line" placeholder="% interest Rate" disabled>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="number" id="term" class="form-control b-line" placeholder="(Yrs) Term" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <a href="javascript:void(0)" id="calculate" class="btn btn-yellow btn-sm mt-3 py-2 px-4" onclick="preventDefault()">Calculate</a>
+                                                    <a href="javascript:void(0)" class="btn btn-fbn btn-sm mt-3 py-2 px-4" id="reset" onclick="preventDefault()">Reset</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-md-6">
+                                <div class="card border-0 mt-3 drop-shadow drop-shadow-xs">
+                                    <div class="card-body px-lg-5 py-lg-4">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <p>Per Month, You Repay
+                                                    <br>
+                                                    <small class="font-weight-light">assuming your interest rate stays the same</small>
+                                                </p>
+                                            </div>
+                                            <div class="text-right mr-0">
+                                                <p>&#8358;<span id="monthly_amount">0</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <p>Total you'll repay over full term
+                                                    <br>
+                                                    <small class="font-weight-light">Does not include <b>Upfront Charges</b> (Committement Fee, Service Charge & Management Fee)</small>
+                                                </p>
+                                            </div>
+                                            <div class="text-right mr-0">
+                                                <p>&#8358;<span id="total_amount">0</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
 <div class="modal fade bd-example-modal-lg" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 arial-hidden="true">
 <div class="modal-dialog" role="document">
@@ -71,7 +272,7 @@ arial-hidden="true">
 
         <div class="modal_content animated slideInRight">
                 <div class="head">
-                    <a href="internetbanking.html"><i class="material-icons lock">lock</i>Internet Banking</a>
+                    <a href="https://ibank.trustbondmortgagebankplc.com/IntBanking"><i class="material-icons lock">lock</i>Internet Banking</a>
                         <i class="fas fa-times"></i>
                 </div>
                 <div class="panel-group" id="accordion">

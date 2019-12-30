@@ -16,6 +16,36 @@ $(".expgroup").hide();
     $(".expgroup").animate({height:'toggle'});
   });
 
+
+
+  $("#calculate").click(function(){
+    var M; //monthly mortgage payment
+    var P = $(".show #loan_amount").val(); //principle / initial amount borrowed
+    var x = parseInt($(".show #interest").val().replace('%', '')); //Variable Interest Rate depending on loan type used
+    var I = x / 100 / 12; //monthly interest rate
+    var N = $(".show #term").val() * 12; //number of payments months
+    //monthly mortgage payment
+    M = monthlyPayment(P, N, I);
+
+    var T = M * N;
+
+    $("#monthly_amount").html( M.toFixed(2));
+    $("#total_amount").html(T.toFixed(2));
+});
+
+function monthlyPayment(p, n, i) {
+    return p * i * (Math.pow(1 + i, n)) / (Math.pow(1 + i, n) - 1);
+}
+
+//Reset button handler
+$("#reset").click(function(){
+    $(".show #loan_amount").val("");
+    $(".show #term").val("");
+    $("#monthly_amount").html("0");
+    $("#total_amount").html("0");
+})
+
+
       $(window).scroll(function(){
             if ($(window).scrollTop() >= 120) {
                 $('.header').addClass('sticky');

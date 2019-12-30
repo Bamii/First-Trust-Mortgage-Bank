@@ -160,6 +160,43 @@
             color:#fff;
 
         }
+        .modal-body{
+            .sec-calculator{
+                padding-top:0 !important;
+                .my-4{
+                    padding:0;
+                    .text-left{
+                        padding:0;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .row{
+                    .card-body{
+                        padding:11px 5px !important;
+                        .row{
+                            .form-group{
+                                .col-12{
+                                    button{
+                                        background-color:$theme-orange;
+                                        color:#fff;
+                                    }
+                                }
+                                
+                                #calculate{
+                                    background-color:$theme-orange;
+                                    color:#fff;
+                                }
+                                #reset{
+                                    border:1px solid $theme-orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1788,6 +1825,7 @@ section{
                     color:$theme-blue;
                     border-radius: 100%;
                     font-size:12px;
+                    cursor: pointer;
                     margin-right: 10px;
                 }
             }

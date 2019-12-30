@@ -876,6 +876,32 @@ button[type=submit]:focus {
   background-color: #EAAB26;
   color: #fff;
 }
+.modal .modal-content .modal-body .sec-calculator {
+  padding-top: 0 !important;
+}
+.modal .modal-content .modal-body .sec-calculator .my-4 {
+  padding: 0;
+}
+.modal .modal-content .modal-body .sec-calculator .my-4 .text-left {
+  padding: 0;
+}
+.modal .modal-content .modal-body .sec-calculator .my-4 .text-left p {
+  margin-bottom: 0;
+}
+.modal .modal-content .modal-body .sec-calculator .row .card-body {
+  padding: 11px 5px !important;
+}
+.modal .modal-content .modal-body .sec-calculator .row .card-body .row .form-group .col-12 button {
+  background-color: #EAAB26;
+  color: #fff;
+}
+.modal .modal-content .modal-body .sec-calculator .row .card-body .row .form-group #calculate {
+  background-color: #EAAB26;
+  color: #fff;
+}
+.modal .modal-content .modal-body .sec-calculator .row .card-body .row .form-group #reset {
+  border: 1px solid #EAAB26;
+}
 
 .fixed-header {
   background-color: #f7f7f7 !important;
@@ -2387,6 +2413,7 @@ section .bot .container ul li:hover span, .loanMortages .bot .container ul li:ho
   color: #385E70;
   border-radius: 100%;
   font-size: 12px;
+  cursor: pointer;
   margin-right: 10px;
 }
 .helpful-tool .inn:hover {
