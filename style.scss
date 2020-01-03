@@ -229,6 +229,9 @@
             .int{
                float:right;
                 margin-right: 20px; 
+                a{
+                    color:$theme-blue;
+                }
             }
         }
         ul{
@@ -399,6 +402,10 @@ section{
             .int{
                float:right;
                 margin-right: 20px; 
+                a{
+                    color:#f7f7f7;
+                }
+                    
             }
         }
         ul{
@@ -621,6 +628,9 @@ section{
             }
             .int{
                float:right; 
+               a{
+                color:$theme-white;
+            }
             }
         }
         ul{

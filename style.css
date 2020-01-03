@@ -116,6 +116,9 @@
   float: right;
   margin-right: 20px;
 }
+.header .top .int a {
+  color: #385E70;
+}
 .header ul {
   padding-left: 0;
   margin-top: 15px;
@@ -935,6 +938,9 @@ button[type=submit]:focus {
   float: right;
   margin-right: 20px;
 }
+.fixed-header .top .int a {
+  color: #385E70;
+}
 .fixed-header ul {
   padding-left: 0;
   margin-top: 15px;
@@ -1093,6 +1099,9 @@ section header .top input, section header .top .contact .row .col-md-4 form text
 section header .top .int, .loanMortages header .top .int, .rentLoan header .top .int {
   float: right;
   margin-right: 20px;
+}
+section header .top .int a, .loanMortages header .top .int a, .rentLoan header .top .int a {
+  color: #f7f7f7;
 }
 section header ul, .loanMortages header ul, .rentLoan header ul {
   padding-left: 0;
@@ -1299,6 +1308,9 @@ section .back_down .top input, section .back_down .top .contact .row .col-md-4 f
 }
 section .back_down .top .int, .loanMortages .back_down .top .int, .rentLoan .back_down .top .int {
   float: right;
+}
+section .back_down .top .int a, .loanMortages .back_down .top .int a, .rentLoan .back_down .top .int a {
+  color: #f7f7f7;
 }
 section .back_down ul, .loanMortages .back_down ul, .rentLoan .back_down ul {
   padding-left: 0;
