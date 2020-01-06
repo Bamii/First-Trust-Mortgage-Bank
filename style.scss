@@ -528,6 +528,12 @@ section{
             .lock{
                 color:#fff;
             }
+            .int{
+                float:right; 
+                a{
+                 color:$theme-grey;
+             }
+            }
             input{
                 border-right:1px solid $theme-grey;
             }
@@ -557,6 +563,12 @@ section{
                 .lock{
                     color:#fff;
                 }
+                .int{
+                    float:right; 
+                    a{
+                     color:$theme-grey;
+                 }
+                 }
                 input{
                     border-right:1px solid $theme-grey;
                 }
